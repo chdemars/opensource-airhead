@@ -1,2 +1,9 @@
-# opensource-airhead
-Repository for developing opensource hardware and software for BMW Airhead motorcycles
+# Opensource Airhead
+Repository for developing opensource hardware, software, and tutorials for BMW Airhead motorcycles.
+
+# Repository Contents
+
+
+# Licenses
+
+
