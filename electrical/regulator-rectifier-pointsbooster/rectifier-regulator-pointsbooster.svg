@@ -15,7 +15,7 @@
    id="svg3401"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="rectifier_regulator.svg">
+   sodipodi:docname="rectifier-regulator-pointsbooster.svg">
   <defs
      id="defs3403" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="37.580198"
-     inkscape:cx="363.02139"
-     inkscape:cy="432.73214"
+     inkscape:zoom="2.3487624"
+     inkscape:cx="340.8629"
+     inkscape:cy="337.50169"
      inkscape:document-units="mm"
      inkscape:current-layer="layer9"
      showgrid="true"
@@ -1788,13 +1788,6 @@
          id="tspan17680"
          x="214.6127"
          y="459.84421">___points_booster_v1___</tspan></text>
-    <rect
-       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.35433072;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect13058-5-0"
-       width="27.993465"
-       height="31.186659"
-       x="108.19527"
-       y="553.75958" />
     <g
        id="g17711">
       <rect
