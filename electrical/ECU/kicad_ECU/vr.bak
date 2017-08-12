@@ -1,0 +1,140 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:L9484
+LIBS:VB525SP-E
+LIBS:LMZ21701
+LIBS:Mini50p12
+LIBS:SI8610BC-B-IS
+LIBS:MAX6575LZUT+T
+LIBS:SI8380P-IU
+LIBS:Rect10si
+LIBS:AEDR-8710-102
+LIBS:MPXA4250AC6U
+LIBS:MPXA6115AC6U
+LIBS:CC2540T
+LIBS:icsp
+LIBS:MCP2561
+LIBS:switches
+LIBS:tom_kicad
+LIBS:2450bm14e0003
+LIBS:ftdi
+LIBS:LMZ20502
+LIBS:MIC45205
+LIBS:usbulc6-2m6
+LIBS:ESD7004
+LIBS:VNQ5027AKTR-E
+LIBS:BSC072N03LD-G
+LIBS:SI8620BC-B-IS
+LIBS:LMV822IQ2T
+LIBS:NTB0101AGWH
+LIBS:TLC6C598PWR
+LIBS:10si_rect
+LIBS:Mini50p16
+LIBS:LM2903Q2T
+LIBS:airhead_ecu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 32
+Title "L9484 Voltage Regulator"
+Date ""
+Rev "0.1"
+Comp "Opensource Airhead"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L L9484 U?
+U 1 1 58AD6AAA
+P 6800 3700
+F 0 "U?" H 6850 3750 50  0000 C CNN
+F 1 "L9484" H 6800 3800 50  0000 C CNN
+F 2 "MODULE" H 6800 3700 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6800 3700 50  0001 C CNN
+	1    6800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Thermistor_NTC TH?
+U 1 1 58AD6AB1
+P 5300 3500
+F 0 "TH?" V 5125 3500 50  0000 C CNN
+F 1 "Thermistor_NTC" V 5425 3500 50  0000 C CNN
+F 2 "" H 5300 3550 50  0001 C CNN
+F 3 "" H 5300 3550 50  0001 C CNN
+	1    5300 3500
+	-1   0    0    1   
+$EndComp
+NoConn ~ 6050 3850
+Wire Wire Line
+	5300 3350 6050 3350
+Wire Wire Line
+	5300 3650 6050 3650
+Wire Wire Line
+	6050 3550 5750 3550
+Connection ~ 6000 3350
+Wire Wire Line
+	5500 3750 6050 3750
+Wire Wire Line
+	5500 3750 5500 4450
+Wire Wire Line
+	5700 4300 5500 4300
+Connection ~ 5500 4300
+Wire Wire Line
+	5750 3550 5750 3750
+Connection ~ 5750 3750
+$Comp
+L Earth #PWR?
+U 1 1 58AD6ACC
+P 5500 4450
+F 0 "#PWR?" H 5500 4200 50  0001 C CNN
+F 1 "Earth" H 5500 4300 50  0001 C CNN
+F 2 "" H 5500 4450 50  0000 C CNN
+F 3 "" H 5500 4450 50  0000 C CNN
+	1    5500 4450
+	1    0    0    -1  
+$EndComp
+Text HLabel 6000 3000 1    60   Input ~ 0
+12VDC
+Wire Wire Line
+	6000 3000 6000 3350
+Text HLabel 6050 3450 0    60   Output ~ 0
+DF+
+Text HLabel 5700 4300 2    60   Input ~ 0
+DF-
+Text HLabel 6050 3950 0    60   Output ~ 0
+Lamp
+Text HLabel 6050 4050 0    60   Input ~ 0
+Phase
+$EndSCHEMATC

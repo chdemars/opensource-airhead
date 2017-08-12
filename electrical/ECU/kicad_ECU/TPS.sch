@@ -1,0 +1,156 @@
+EESchema Schematic File Version 2
+LIBS:airhead_ecu-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:L9484
+LIBS:VB525SP-E
+LIBS:LMZ21701
+LIBS:Mini50p12
+LIBS:SI8610BC-B-IS
+LIBS:MAX6575LZUT+T
+LIBS:SI8380P-IU
+LIBS:Rect10si
+LIBS:AEDR-8710-102
+LIBS:MPXA4250AC6U
+LIBS:MPXA6115AC6U
+LIBS:CC2540T
+LIBS:icsp
+LIBS:MCP2561
+LIBS:switches
+LIBS:tom_kicad
+LIBS:2450bm14e0003
+LIBS:ftdi
+LIBS:LMZ20502
+LIBS:MIC45205
+LIBS:usbulc6-2m6
+LIBS:ESD7004
+LIBS:VNQ5027AKTR-E
+LIBS:BSC072N03LD-G
+LIBS:SI8620BC-B-IS
+LIBS:LMV822IQ2T
+LIBS:NTB0101AGWH
+LIBS:TLC6C598PWR
+LIBS:10si_rect
+LIBS:Mini50p16
+LIBS:LM2903Q2T
+LIBS:airhead_ecu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 33
+Title "Throttle Position Sensor"
+Date ""
+Rev "0.1"
+Comp "Opensource Airhead"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4800 3150 0    60   Input ~ 0
+sensor
+Text HLabel 6150 2650 0    60   Input ~ 0
+ADC_clamp
+Text HLabel 7050 3150 2    60   Input ~ 0
+CPU
+$Comp
+L R R?
+U 1 1 597755F5
+P 5700 3150
+AR Path="/5974D512/5977551F/597755F5" Ref="R?"  Part="1" 
+AR Path="/5974D512/59775648/597755F5" Ref="R?"  Part="1" 
+F 0 "R?" V 5780 3150 50  0000 C CNN
+F 1 "470" V 5700 3150 50  0000 C CNN
+F 2 "" V 5630 3150 50  0001 C CNN
+F 3 "" H 5700 3150 50  0001 C CNN
+	1    5700 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 597755FC
+P 5200 3550
+AR Path="/5974D512/5977551F/597755FC" Ref="C?"  Part="1" 
+AR Path="/5974D512/59775648/597755FC" Ref="C?"  Part="1" 
+F 0 "C?" H 5225 3650 50  0000 L CNN
+F 1 "0.1uF" H 5225 3450 50  0000 L CNN
+F 2 "" H 5238 3400 50  0001 C CNN
+F 3 "" H 5200 3550 50  0001 C CNN
+	1    5200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59775603
+P 6700 3550
+AR Path="/5974D512/5977551F/59775603" Ref="C?"  Part="1" 
+AR Path="/5974D512/59775648/59775603" Ref="C?"  Part="1" 
+F 0 "C?" H 6725 3650 50  0000 L CNN
+F 1 "0.22uF" H 6725 3450 50  0000 L CNN
+F 2 "" H 6738 3400 50  0001 C CNN
+F 3 "" H 6700 3550 50  0001 C CNN
+	1    6700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5977560A
+P 6700 4200
+AR Path="/5974D512/5977551F/5977560A" Ref="#PWR?"  Part="1" 
+AR Path="/5974D512/59775648/5977560A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6700 3950 50  0001 C CNN
+F 1 "Earth" H 6700 4050 50  0001 C CNN
+F 2 "" H 6700 4200 50  0001 C CNN
+F 3 "" H 6700 4200 50  0001 C CNN
+	1    6700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3150 5550 3150
+Wire Wire Line
+	5200 3400 5200 3150
+Connection ~ 5200 3150
+Wire Wire Line
+	5850 3150 7050 3150
+Wire Wire Line
+	6700 3400 6700 3150
+Connection ~ 6700 3150
+Wire Wire Line
+	6700 3700 6700 4200
+Wire Wire Line
+	6150 2650 6150 3150
+Connection ~ 6150 3150
+Wire Wire Line
+	5200 3700 5200 3900
+Wire Wire Line
+	5200 3900 6700 3900
+Connection ~ 6700 3900
+$EndSCHEMATC

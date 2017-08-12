@@ -1,0 +1,325 @@
+@charset "shift_jis";
+/*CSS Document
+
+/*	initialize	*/
+
+body{
+	color:#333333;/*通常のテキストカラー*/
+	background-color:#DDFFDD;
+	text-align:center;
+	}
+a{
+	color:#0099FF;/*通常のリンクテキストカラー*/
+	}
+a:hover{
+	color:#FF9900;/*マウスが乗った時の通常のリンクテキストカラー*/
+	text-decoration:underline;/*マウスが乗った時下線を表示（つけない場合は underline を none へ）*/
+	}
+
+/*	end of initialize	*/
+
+
+
+*{ margin:0; padding:0;}
+img{ border:0px none;}
+a img{ border:0px none;}
+
+table, div{
+	margin:auto;
+	}
+
+/*	font size	*/
+body {
+    font-size: 16px; /* モダンブラウザ */
+    *font-size: 100%; /* IE 7 */
+    *font: 100%; /* IE 6以下 */
+	font-family:'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;	
+	
+}
+p, th, td, li{
+	font-size:12px;
+	*font-size:90%;
+	*font:90%;
+	}
+
+
+/*	index tag	*/
+h1{
+	font-size:14px;
+	font-weight:normal;
+	border-color:#333333;
+	border-width:0px 0 0 4px ;
+	color:#333333;
+	text-indent:10px;
+	line-height:24px;
+	vertical-align:top;
+	padding:20px 0 0 0;
+	}	
+h2{
+	background:url('img/common/bg_h2.jpg') no-repeat;
+	font-size:14px;
+	color:#666666;
+	text-indent:10px;
+	vertical-align:top;
+	height:42px;
+	line-height:42px;
+	margin-left:0; margin-right:0; margin-top:0; margin-bottom:5px
+	}
+
+h3{
+	background:url('img/common/bg_h3.gif') no-repeat;
+	font-size:12px;
+	color:#0099CC;
+	text-indent:12px;
+	vertical-align:top;
+	height:32px;
+	line-height:32px;
+	font-weight:normal; margin-left:0; margin-right:0; margin-top:0; margin-bottom:5px
+	}
+
+.obj{
+	margin:0 6px 0 6px;
+	}
+.obj p{
+	line-height:160%;
+	margin:0 0 12px 0;
+	}
+
+.CNT{ text-align:center;}
+.R{ text-align:right;}
+.L{ text-align:left;}
+
+/*	layout	*/
+#bg{
+	width:900px;
+	background:url('img/common/bg_con.gif') repeat-y;
+	margin:0 auto;
+	text-align:left
+	}
+
+#head{
+	background:url('img/common/bg_head.gif') no-repeat top left;
+	width:898px;
+	margin:0 1px;
+	}
+#head p#logo{ 	
+	font-size:32px;
+	font-weight:normal;
+	font-family:"Courier New", Courier, mono;
+	border-color:#333333;
+	border-width:0px 0 0 4px ;
+	color:#0099CC;
+	text-indent:10px;
+	line-height:32px;
+	}
+#head p#logo a{
+	text-decoration:none;
+	color:#0099CC;	
+	}	
+#head p#logo a:hover{
+	text-decoration:none;
+	color:#0099CC;	
+	}	
+
+/*	header menu	*/			
+#head_menu{
+	width:800px;
+	background:url('img/common/bg_menu.gif') no-repeat;
+	font-size:10px;
+	height:44px;
+	color:#FFFFFF;
+	margin-left:10px; margin-right:0; margin-top:0; margin-bottom:0
+	}
+#head_menu ul{
+	list-style-type:none;
+	padding:1px 0 0 1px;
+	}
+#head_menu ul li{
+	float:left;
+	background:url('img/common/bg_menu_sub.gif') no-repeat right;
+	text-align:center;
+	height:36px;
+	line-height:36px; padding-left:8px; padding-right:10px; padding-top:0; padding-bottom:0
+	}		
+#head_menu a{
+	color:#333333;
+	font-size:12px;
+	letter-spacing:1px;
+	text-decoration:none;
+	height:25px;
+	vertical-align:middle;
+	margin:0 4px 0 4px;
+	}
+#head_menu a:hover{
+	color:#0099CC;
+	}
+	   
+
+
+#contents{
+	clear:left;
+	margin:0 10px 0 10px;
+	zoom:100%;
+	}
+#contents:after{
+	content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden	
+	}
+
+#left_menu{
+	float:left;
+	width:150px;
+	}
+
+#left_menu p{
+	}
+	
+#left_menu ul{
+	border-left:0px solid #EEEEEE; border-right:0px solid #EEEEEE; border-top:1px solid #EEEEEE; border-bottom:1px solid #EEEEEE; width:150px;
+	list-style-type:none;
+	margin-bottom:20px;
+	background:url('img/common/bg_left_menu.gif') repeat-y;
+	padding-left:0; padding-right:0; padding-top:0; padding-bottom:1px
+ 	}
+
+#left_menu ul li{
+	width:146px;
+	background:url('img/common/bg_left_menu_sub.gif') no-repeat top left;
+	margin:0 2px;
+	}
+
+#left_menu ul li.title{
+	color:#0099CC;
+	font-size:11px;
+	text-indent:5px;
+	background:url('img/common/bg_li_title.gif') no-repeat top left;
+}
+
+
+#left_menu ul li a{
+	color:#555555;
+	display:block;
+	text-decoration:none;
+	vertical-align:top;
+	font-size:12px;
+	line-height:26px;
+	height:26px;
+	width:144px;
+	text-indent:4px;
+	}					
+#left_menu ul li a:hover{
+	color:#FF9900;
+}
+#main{
+	width:640px;
+	float:left;
+	margin:0 0 0 20px;
+	zoom:100%;
+	}
+#main:after{
+	content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden	
+}
+#main p{
+	line-height:2.0em;
+	margin:0 0 16px 0;
+	}
+#foot_up{
+	clear:left;
+	}
+#foot{
+	border-left:0px solid #cccccc; border-right:0px solid #cccccc; border-top:1px solid #cccccc; border-bottom:1px solid #cccccc; color:#777777; /*コピーライトのテキストの色*/
+    height:40px;
+	clear:both;
+	text-align:center;
+	font-size:11px;
+	margin-left:0; margin-right:0; margin-top:20px; margin-bottom:0; padding-left:0; padding-right:0; padding-top:6px; padding-bottom:0
+	}
+#foot a{
+	color:#777777;
+	text-decoration:none;
+	}
+#foot a:hover{
+	color:#777777;
+	}
+
+/******************************************	top page **********************************************/
+#top{
+	}
+#top div#bg_main_image{
+	background:url('image/index-bg.jpg') no-repeat; 
+	width:640px;
+	height:540px;
+	margin-left:0; margin-right:0; margin-top:0; margin-bottom:20px
+	}
+#top div#main_image{
+	background:url('image/index-bg.jpg') no-repeat;
+	width:630px;
+	height:530px;
+	margin:5px
+	}
+#top div#main_image p{
+	line-height:180%;
+	margin:10px 5px 0 5px;
+	}
+#top div#info{
+	background:url('img/top/bg_info_main.gif') repeat-y;
+	}	
+#top div#info h2{
+	margin:0;
+	text-indent:0;
+	background:none;
+	}
+#top div#info div#info_inner{
+	margin:0 1px 0 1px;
+	overflow:auto;
+	height:160px;
+	}
+#top div#info div#info_inner h3{
+	border-width:0;
+	margin:5px 5px 0 5px;
+	text-indent:0;
+	background:none;
+	font-size:100%;
+	color:#0099CC;
+	font-weight:normal;
+	height:auto;
+	line-height:1.0em;
+	}
+
+#top div#info div#info_inner p{
+	line-height:150%;
+	margin:0 5px 12px 5px;
+	}
+
+	
+/******************************************************************************************************/
+#p-copy{
+	width:920px;
+	text-align:left;
+
+	}
+#p-copy p a{
+	background:url('img/common/copy_pondt_wt.gif') no-repeat;
+	display:block;
+	width:24px;
+	height:13px;
+	text-indent:-9999px;
+	margin-left:896px; margin-right:0; margin-top:5px; margin-bottom:0
+	}
+	
+@media print{
+
+#container{
+
+	}
+}			
+
+
+	   

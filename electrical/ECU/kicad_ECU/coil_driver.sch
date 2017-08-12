@@ -1,0 +1,236 @@
+EESchema Schematic File Version 2
+LIBS:airhead_ecu-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:L9484
+LIBS:VB525SP-E
+LIBS:LMZ21701
+LIBS:Mini50p12
+LIBS:SI8610BC-B-IS
+LIBS:MAX6575LZUT+T
+LIBS:SI8380P-IU
+LIBS:Rect10si
+LIBS:AEDR-8710-102
+LIBS:MPXA4250AC6U
+LIBS:MPXA6115AC6U
+LIBS:CC2540T
+LIBS:icsp
+LIBS:MCP2561
+LIBS:switches
+LIBS:tom_kicad
+LIBS:2450bm14e0003
+LIBS:ftdi
+LIBS:LMZ20502
+LIBS:MIC45205
+LIBS:usbulc6-2m6
+LIBS:ESD7004
+LIBS:VNQ5027AKTR-E
+LIBS:BSC072N03LD-G
+LIBS:SI8620BC-B-IS
+LIBS:LMV822IQ2T
+LIBS:NTB0101AGWH
+LIBS:TLC6C598PWR
+LIBS:10si_rect
+LIBS:Mini50p16
+LIBS:LM2903Q2T
+LIBS:airhead_ecu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 16 33
+Title "Coil Driver"
+Date ""
+Rev "0.1"
+Comp "Opensource Airhead"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L VB525SP-E U?
+U 1 1 58AD2D12
+P 6500 3300
+AR Path="/5974D512/59776B36/58AD2D12" Ref="U?"  Part="1" 
+AR Path="/5974D512/59776B4C/58AD2D12" Ref="U?"  Part="1" 
+F 0 "U?" H 6550 3350 50  0000 C CNN
+F 1 "VB525SP-E" H 6500 3400 50  0000 C CNN
+F 2 "MODULE" H 6500 3300 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6500 3300 50  0001 C CNN
+	1    6500 3300
+	-1   0    0    1   
+$EndComp
+NoConn ~ 5700 3300
+$Comp
+L C_Small C?
+U 1 1 58AD2D1A
+P 5700 2500
+AR Path="/5974D512/59776B36/58AD2D1A" Ref="C?"  Part="1" 
+AR Path="/5974D512/59776B4C/58AD2D1A" Ref="C?"  Part="1" 
+F 0 "C?" H 5710 2570 50  0000 L CNN
+F 1 "1uF" H 5710 2420 50  0000 L CNN
+F 2 "" H 5700 2500 50  0000 C CNN
+F 3 "" H 5700 2500 50  0000 C CNN
+	1    5700 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 58AD2D21
+P 5700 2750
+AR Path="/5974D512/59776B36/58AD2D21" Ref="C?"  Part="1" 
+AR Path="/5974D512/59776B4C/58AD2D21" Ref="C?"  Part="1" 
+F 0 "C?" H 5710 2820 50  0000 L CNN
+F 1 "100nF" H 5710 2670 50  0000 L CNN
+F 2 "" H 5700 2750 50  0000 C CNN
+F 3 "" H 5700 2750 50  0000 C CNN
+	1    5700 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58AD2D28
+P 5600 3500
+AR Path="/5974D512/59776B36/58AD2D28" Ref="R?"  Part="1" 
+AR Path="/5974D512/59776B4C/58AD2D28" Ref="R?"  Part="1" 
+F 0 "R?" H 5630 3520 50  0000 L CNN
+F 1 "1k" H 5630 3460 50  0000 L CNN
+F 2 "" H 5600 3500 50  0000 C CNN
+F 3 "" H 5600 3500 50  0000 C CNN
+	1    5600 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58AD2D2F
+P 5450 3750
+AR Path="/5974D512/59776B36/58AD2D2F" Ref="R?"  Part="1" 
+AR Path="/5974D512/59776B4C/58AD2D2F" Ref="R?"  Part="1" 
+F 0 "R?" H 5480 3770 50  0000 L CNN
+F 1 "18k" H 5480 3710 50  0000 L CNN
+F 2 "" H 5450 3750 50  0000 C CNN
+F 3 "" H 5450 3750 50  0000 C CNN
+	1    5450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 58AD2D36
+P 5150 3750
+AR Path="/5974D512/59776B36/58AD2D36" Ref="C?"  Part="1" 
+AR Path="/5974D512/59776B4C/58AD2D36" Ref="C?"  Part="1" 
+F 0 "C?" H 5160 3820 50  0000 L CNN
+F 1 "1nF" H 5160 3670 50  0000 L CNN
+F 2 "" H 5150 3750 50  0000 C CNN
+F 3 "" H 5150 3750 50  0000 C CNN
+	1    5150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 58AD2D41
+P 5450 4150
+AR Path="/5974D512/59776B36/58AD2D41" Ref="#PWR?"  Part="1" 
+AR Path="/5974D512/59776B4C/58AD2D41" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5450 3900 50  0001 C CNN
+F 1 "Earth" H 5450 4000 50  0001 C CNN
+F 2 "" H 5450 4150 50  0000 C CNN
+F 3 "" H 5450 4150 50  0000 C CNN
+	1    5450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 58AD2D47
+P 7300 4150
+AR Path="/5974D512/59776B36/58AD2D47" Ref="#PWR?"  Part="1" 
+AR Path="/5974D512/59776B4C/58AD2D47" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7300 3900 50  0001 C CNN
+F 1 "Earth" H 7300 4000 50  0001 C CNN
+F 2 "" H 7300 4150 50  0000 C CNN
+F 3 "" H 7300 4150 50  0000 C CNN
+	1    7300 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 3100
+Connection ~ 7300 3200
+Connection ~ 7300 3300
+Connection ~ 7300 3400
+Connection ~ 7300 3500
+Wire Wire Line
+	5450 3200 5700 3200
+Wire Wire Line
+	5000 2500 5600 2500
+Connection ~ 5450 2500
+Wire Wire Line
+	5600 2750 5450 2750
+Connection ~ 5450 2750
+Wire Wire Line
+	5500 3500 5000 3500
+Wire Wire Line
+	5150 3650 5150 3500
+Connection ~ 5150 3500
+Wire Wire Line
+	5450 3650 5450 3500
+Connection ~ 5450 3500
+Wire Wire Line
+	5150 4050 5150 3850
+Wire Wire Line
+	5800 2500 6100 2500
+Wire Wire Line
+	6100 2500 6100 2750
+Connection ~ 6100 2750
+Wire Wire Line
+	5800 2750 7300 2750
+Wire Wire Line
+	5450 3850 5450 4150
+Connection ~ 5450 4050
+Wire Wire Line
+	5150 4050 5450 4050
+Wire Wire Line
+	5000 3400 5700 3400
+Wire Wire Line
+	5000 3100 5700 3100
+Wire Wire Line
+	7300 2750 7300 4150
+Text HLabel 5000 3100 0    60   Input ~ 0
+E
+Text HLabel 5000 3400 0    60   Input ~ 0
+Input
+Text HLabel 5000 3500 0    60   Input ~ 0
+Flag
+Wire Wire Line
+	5450 2500 5450 3200
+Text HLabel 5000 2500 0    60   Input ~ 0
+5VDC
+Text HLabel 6500 4000 3    60   Output ~ 0
+Coil
+$EndSCHEMATC

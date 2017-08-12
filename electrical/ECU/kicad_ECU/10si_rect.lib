@@ -1,0 +1,18 @@
+EESchema-LIBRARY Version 2.2  Date: 29/07/2017-22:42:52
+#
+# 10si_rect
+#
+DEF 10si_rect U 0 40 Y Y 1 0 N
+F0 "U" 0 -100 50 H V C C
+F1 "10si_rect" 0 100 50 H V C C
+F2 "MODULE" 0 0 50 H I C C
+F3 "DOCUMENTATION" 0 0 50 H I C C
+DRAW
+S -450 -300 450 300 1 0 0 N
+X Vcc 1 -750 100 300 R 50 50 1 1 I
+X Dtrio 2 -750 0 300 R 50 50 1 1 I
+X GND 3 -750 -100 300 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

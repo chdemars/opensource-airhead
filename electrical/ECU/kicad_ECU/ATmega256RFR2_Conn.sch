@@ -1,0 +1,1127 @@
+EESchema Schematic File Version 2
+LIBS:airhead_ecu-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:L9484
+LIBS:VB525SP-E
+LIBS:LMZ21701
+LIBS:Mini50p12
+LIBS:SI8610BC-B-IS
+LIBS:MAX6575LZUT+T
+LIBS:SI8380P-IU
+LIBS:Rect10si
+LIBS:AEDR-8710-102
+LIBS:MPXA4250AC6U
+LIBS:MPXA6115AC6U
+LIBS:CC2540T
+LIBS:icsp
+LIBS:MCP2561
+LIBS:switches
+LIBS:tom_kicad
+LIBS:2450bm14e0003
+LIBS:ftdi
+LIBS:LMZ20502
+LIBS:MIC45205
+LIBS:usbulc6-2m6
+LIBS:ESD7004
+LIBS:VNQ5027AKTR-E
+LIBS:BSC072N03LD-G
+LIBS:SI8620BC-B-IS
+LIBS:LMV822IQ2T
+LIBS:NTB0101AGWH
+LIBS:TLC6C598PWR
+LIBS:10si_rect
+LIBS:Mini50p16
+LIBS:LM2903Q2T
+LIBS:airhead_ecu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 33
+Title "ATmega256RFR2 Standalone Connectors"
+Date ""
+Rev "0.1"
+Comp "Opensource Airhead"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X15 J?
+U 1 1 598B1E86
+P 9950 3850
+F 0 "J?" H 9950 4650 50  0000 C CNN
+F 1 "CONN_01X15" V 10050 3850 50  0000 C CNN
+F 2 "" H 9950 3850 50  0001 C CNN
+F 3 "" H 9950 3850 50  0001 C CNN
+	1    9950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1E8D
+P 7100 3150
+F 0 "F?" V 7025 3150 50  0000 C CNN
+F 1 "30mA/110Ω" V 7175 3150 50  0000 C CNN
+F 2 "" H 7150 2950 50  0001 L CNN
+F 3 "" H 7100 3150 50  0001 C CNN
+	1    7100 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1E94
+P 7450 3250
+F 0 "F?" V 7375 3250 50  0000 C CNN
+F 1 "30mA/110Ω" V 7525 3250 50  0000 C CNN
+F 2 "" H 7500 3050 50  0001 L CNN
+F 3 "" H 7450 3250 50  0001 C CNN
+	1    7450 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1E9B
+P 7800 3350
+F 0 "F?" V 7725 3350 50  0000 C CNN
+F 1 "30mA/110Ω" V 7875 3350 50  0000 C CNN
+F 2 "" H 7850 3150 50  0001 L CNN
+F 3 "" H 7800 3350 50  0001 C CNN
+	1    7800 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1EA2
+P 8150 3450
+F 0 "F?" V 8075 3450 50  0000 C CNN
+F 1 "30mA/110Ω" V 8225 3450 50  0000 C CNN
+F 2 "" H 8200 3250 50  0001 L CNN
+F 3 "" H 8150 3450 50  0001 C CNN
+	1    8150 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1EA9
+P 8500 3550
+F 0 "F?" V 8425 3550 50  0000 C CNN
+F 1 "30mA/110Ω" V 8575 3550 50  0000 C CNN
+F 2 "" H 8550 3350 50  0001 L CNN
+F 3 "" H 8500 3550 50  0001 C CNN
+	1    8500 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1EB0
+P 8850 3650
+F 0 "F?" V 8775 3650 50  0000 C CNN
+F 1 "30mA/110Ω" V 8925 3650 50  0000 C CNN
+F 2 "" H 8900 3450 50  0001 L CNN
+F 3 "" H 8850 3650 50  0001 C CNN
+	1    8850 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1EB7
+P 9200 3750
+F 0 "F?" V 9125 3750 50  0000 C CNN
+F 1 "30mA/110Ω" V 9275 3750 50  0000 C CNN
+F 2 "" H 9250 3550 50  0001 L CNN
+F 3 "" H 9200 3750 50  0001 C CNN
+	1    9200 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1EBE
+P 9550 3850
+F 0 "F?" V 9475 3850 50  0000 C CNN
+F 1 "30mA/110Ω" V 9625 3850 50  0000 C CNN
+F 2 "" H 9600 3650 50  0001 L CNN
+F 3 "" H 9550 3850 50  0001 C CNN
+	1    9550 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1EC5
+P 8300 3950
+F 0 "F?" V 8225 3950 50  0000 C CNN
+F 1 "30mA/110Ω" V 8375 3950 50  0000 C CNN
+F 2 "" H 8350 3750 50  0001 L CNN
+F 3 "" H 8300 3950 50  0001 C CNN
+	1    8300 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1ECC
+P 8650 4050
+F 0 "F?" V 8575 4050 50  0000 C CNN
+F 1 "30mA/110Ω" V 8725 4050 50  0000 C CNN
+F 2 "" H 8700 3850 50  0001 L CNN
+F 3 "" H 8650 4050 50  0001 C CNN
+	1    8650 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1ED3
+P 9000 4150
+F 0 "F?" V 8925 4150 50  0000 C CNN
+F 1 "30mA/110Ω" V 9075 4150 50  0000 C CNN
+F 2 "" H 9050 3950 50  0001 L CNN
+F 3 "" H 9000 4150 50  0001 C CNN
+	1    9000 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1EDA
+P 9350 4250
+F 0 "F?" V 9275 4250 50  0000 C CNN
+F 1 "30mA/110Ω" V 9425 4250 50  0000 C CNN
+F 2 "" H 9400 4050 50  0001 L CNN
+F 3 "" H 9350 4250 50  0001 C CNN
+	1    9350 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1EE1
+P 8900 4350
+F 0 "F?" V 8825 4350 50  0000 C CNN
+F 1 "30mA/110Ω" V 8975 4350 50  0000 C CNN
+F 2 "" H 8950 4150 50  0001 L CNN
+F 3 "" H 8900 4350 50  0001 C CNN
+	1    8900 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1EE8
+P 9250 4450
+F 0 "F?" V 9175 4450 50  0000 C CNN
+F 1 "30mA/110Ω" V 9325 4450 50  0000 C CNN
+F 2 "" H 9300 4250 50  0001 L CNN
+F 3 "" H 9250 4450 50  0001 C CNN
+	1    9250 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B1EEF
+P 9600 4550
+F 0 "F?" V 9525 4550 50  0000 C CNN
+F 1 "30mA/110Ω" V 9675 4550 50  0000 C CNN
+F 2 "" H 9650 4350 50  0001 L CNN
+F 3 "" H 9600 4550 50  0001 C CNN
+	1    9600 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1EF6
+P 6700 4900
+F 0 "D?" H 6700 5000 50  0000 C CNN
+F 1 "3.4v" H 6700 4800 50  0000 C CNN
+F 2 "" H 6700 4900 50  0001 C CNN
+F 3 "" H 6700 4900 50  0001 C CNN
+	1    6700 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1EFD
+P 6850 5050
+F 0 "D?" H 6850 5150 50  0000 C CNN
+F 1 "3.4v" H 6850 4950 50  0000 C CNN
+F 2 "" H 6850 5050 50  0001 C CNN
+F 3 "" H 6850 5050 50  0001 C CNN
+	1    6850 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F04
+P 7000 4900
+F 0 "D?" H 7000 5000 50  0000 C CNN
+F 1 "3.4v" H 7000 4800 50  0000 C CNN
+F 2 "" H 7000 4900 50  0001 C CNN
+F 3 "" H 7000 4900 50  0001 C CNN
+	1    7000 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F0B
+P 7150 5050
+F 0 "D?" H 7150 5150 50  0000 C CNN
+F 1 "3.4v" H 7150 4950 50  0000 C CNN
+F 2 "" H 7150 5050 50  0001 C CNN
+F 3 "" H 7150 5050 50  0001 C CNN
+	1    7150 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F12
+P 7300 4900
+F 0 "D?" H 7300 5000 50  0000 C CNN
+F 1 "3.4v" H 7300 4800 50  0000 C CNN
+F 2 "" H 7300 4900 50  0001 C CNN
+F 3 "" H 7300 4900 50  0001 C CNN
+	1    7300 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F19
+P 7450 5050
+F 0 "D?" H 7450 5150 50  0000 C CNN
+F 1 "3.4v" H 7450 4950 50  0000 C CNN
+F 2 "" H 7450 5050 50  0001 C CNN
+F 3 "" H 7450 5050 50  0001 C CNN
+	1    7450 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F20
+P 7600 4900
+F 0 "D?" H 7600 5000 50  0000 C CNN
+F 1 "3.4v" H 7600 4800 50  0000 C CNN
+F 2 "" H 7600 4900 50  0001 C CNN
+F 3 "" H 7600 4900 50  0001 C CNN
+	1    7600 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F27
+P 7750 5050
+F 0 "D?" H 7750 5150 50  0000 C CNN
+F 1 "3.4v" H 7750 4950 50  0000 C CNN
+F 2 "" H 7750 5050 50  0001 C CNN
+F 3 "" H 7750 5050 50  0001 C CNN
+	1    7750 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F2E
+P 7900 4900
+F 0 "D?" H 7900 5000 50  0000 C CNN
+F 1 "3.4v" H 7900 4800 50  0000 C CNN
+F 2 "" H 7900 4900 50  0001 C CNN
+F 3 "" H 7900 4900 50  0001 C CNN
+	1    7900 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F35
+P 8050 5050
+F 0 "D?" H 8050 5150 50  0000 C CNN
+F 1 "3.4v" H 8050 4950 50  0000 C CNN
+F 2 "" H 8050 5050 50  0001 C CNN
+F 3 "" H 8050 5050 50  0001 C CNN
+	1    8050 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F3C
+P 8200 4900
+F 0 "D?" H 8200 5000 50  0000 C CNN
+F 1 "3.4v" H 8200 4800 50  0000 C CNN
+F 2 "" H 8200 4900 50  0001 C CNN
+F 3 "" H 8200 4900 50  0001 C CNN
+	1    8200 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F43
+P 8350 5050
+F 0 "D?" H 8350 5150 50  0000 C CNN
+F 1 "3.4v" H 8350 4950 50  0000 C CNN
+F 2 "" H 8350 5050 50  0001 C CNN
+F 3 "" H 8350 5050 50  0001 C CNN
+	1    8350 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F4A
+P 8500 4900
+F 0 "D?" H 8500 5000 50  0000 C CNN
+F 1 "3.4v" H 8500 4800 50  0000 C CNN
+F 2 "" H 8500 4900 50  0001 C CNN
+F 3 "" H 8500 4900 50  0001 C CNN
+	1    8500 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F51
+P 8650 5050
+F 0 "D?" H 8650 5150 50  0000 C CNN
+F 1 "3.4v" H 8650 4950 50  0000 C CNN
+F 2 "" H 8650 5050 50  0001 C CNN
+F 3 "" H 8650 5050 50  0001 C CNN
+	1    8650 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B1F58
+P 8800 4900
+F 0 "D?" H 8800 5000 50  0000 C CNN
+F 1 "3.4v" H 8800 4800 50  0000 C CNN
+F 2 "" H 8800 4900 50  0001 C CNN
+F 3 "" H 8800 4900 50  0001 C CNN
+	1    8800 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 598B1F5F
+P 8800 5600
+F 0 "#PWR?" H 8800 5350 50  0001 C CNN
+F 1 "Earth" H 8800 5450 50  0001 C CNN
+F 2 "" H 8800 5600 50  0001 C CNN
+F 3 "" H 8800 5600 50  0001 C CNN
+	1    8800 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4750 6700 3150
+Connection ~ 6700 3150
+Wire Wire Line
+	6850 4900 6850 3250
+Connection ~ 6850 3250
+Wire Wire Line
+	7000 4750 7000 3350
+Connection ~ 7000 3350
+Wire Wire Line
+	7150 4900 7150 3450
+Connection ~ 7150 3450
+Wire Wire Line
+	7300 4750 7300 3550
+Connection ~ 7300 3550
+Wire Wire Line
+	7450 3650 7450 4900
+Connection ~ 7450 3650
+Wire Wire Line
+	7600 4750 7600 3750
+Connection ~ 7600 3750
+Wire Wire Line
+	7750 4900 7750 3850
+Connection ~ 7750 3850
+Wire Wire Line
+	7900 4750 7900 3950
+Connection ~ 7900 3950
+Wire Wire Line
+	8050 4900 8050 4050
+Connection ~ 8050 4050
+Wire Wire Line
+	8200 4750 8200 4150
+Connection ~ 8200 4150
+Wire Wire Line
+	8350 4900 8350 4250
+Connection ~ 8350 4250
+Wire Wire Line
+	8500 4750 8500 4350
+Connection ~ 8500 4350
+Wire Wire Line
+	8650 4900 8650 4450
+Connection ~ 8650 4450
+Wire Wire Line
+	8800 4750 8800 4550
+Connection ~ 8800 4550
+Wire Wire Line
+	6700 5050 6700 5400
+Wire Wire Line
+	6700 5400 8800 5400
+Wire Wire Line
+	8800 5050 8800 5600
+Wire Wire Line
+	6850 5200 6850 5400
+Connection ~ 6850 5400
+Wire Wire Line
+	7000 5050 7000 5400
+Connection ~ 7000 5400
+Wire Wire Line
+	7150 5200 7150 5400
+Connection ~ 7150 5400
+Wire Wire Line
+	7300 5050 7300 5400
+Connection ~ 7300 5400
+Wire Wire Line
+	7450 5200 7450 5400
+Connection ~ 7450 5400
+Wire Wire Line
+	7600 5050 7600 5400
+Connection ~ 7600 5400
+Wire Wire Line
+	7750 5200 7750 5400
+Connection ~ 7750 5400
+Wire Wire Line
+	7900 5050 7900 5400
+Connection ~ 7900 5400
+Wire Wire Line
+	8050 5200 8050 5400
+Connection ~ 8050 5400
+Wire Wire Line
+	8200 5050 8200 5400
+Connection ~ 8200 5400
+Wire Wire Line
+	8350 5200 8350 5400
+Connection ~ 8350 5400
+Wire Wire Line
+	8500 5050 8500 5400
+Connection ~ 8500 5400
+Wire Wire Line
+	8650 5200 8650 5400
+Connection ~ 8650 5400
+Connection ~ 8800 5400
+Wire Wire Line
+	6400 3150 7000 3150
+Wire Wire Line
+	7200 3150 9750 3150
+Wire Wire Line
+	9750 3250 7550 3250
+Wire Wire Line
+	6400 3250 7350 3250
+Wire Wire Line
+	6400 3350 7700 3350
+Wire Wire Line
+	7900 3350 9750 3350
+Wire Wire Line
+	9750 3450 8250 3450
+Wire Wire Line
+	6400 3450 8050 3450
+Wire Wire Line
+	6400 3550 8400 3550
+Wire Wire Line
+	8600 3550 9750 3550
+Wire Wire Line
+	6400 3650 8750 3650
+Wire Wire Line
+	8950 3650 9750 3650
+Wire Wire Line
+	9750 3750 9300 3750
+Wire Wire Line
+	6400 3750 9100 3750
+Wire Wire Line
+	6400 3850 9450 3850
+Wire Wire Line
+	9650 3850 9750 3850
+Wire Wire Line
+	9750 3950 8400 3950
+Wire Wire Line
+	6400 3950 8200 3950
+Wire Wire Line
+	6400 4050 8550 4050
+Wire Wire Line
+	8750 4050 9750 4050
+Wire Wire Line
+	9750 4150 9100 4150
+Wire Wire Line
+	6400 4150 8900 4150
+Wire Wire Line
+	6400 4250 9250 4250
+Wire Wire Line
+	9450 4250 9750 4250
+Wire Wire Line
+	6400 4350 8800 4350
+Wire Wire Line
+	9000 4350 9750 4350
+Wire Wire Line
+	9750 4450 9350 4450
+Wire Wire Line
+	6400 4450 9150 4450
+Wire Wire Line
+	6400 4550 9500 4550
+Wire Wire Line
+	9700 4550 9750 4550
+Text HLabel 6400 3150 0    60   Input ~ 0
+B1
+Text HLabel 6400 3250 0    60   Input ~ 0
+B2
+Text HLabel 6400 3350 0    60   Input ~ 0
+B3
+Text HLabel 6400 3450 0    60   Input ~ 0
+B4
+Text HLabel 6400 3550 0    60   Input ~ 0
+B5
+Text HLabel 6400 3650 0    60   Input ~ 0
+B6
+Text HLabel 6400 3750 0    60   Input ~ 0
+B7
+Text HLabel 6400 3850 0    60   Input ~ 0
+B8
+Text HLabel 6400 3950 0    60   Input ~ 0
+B9
+Text HLabel 6400 4050 0    60   Input ~ 0
+B10
+Text HLabel 6400 4150 0    60   Input ~ 0
+B11
+Text HLabel 6400 4250 0    60   Input ~ 0
+B12
+Text HLabel 6400 4350 0    60   Input ~ 0
+B13
+Text HLabel 6400 4450 0    60   Input ~ 0
+B14
+Text HLabel 6400 4550 0    60   Input ~ 0
+B15
+Wire Wire Line
+	1550 3200 3950 3200
+Wire Wire Line
+	1550 3300 3950 3300
+Wire Wire Line
+	1550 3400 3950 3400
+Wire Wire Line
+	850  3500 3950 3500
+Wire Wire Line
+	850  3600 3950 3600
+$Comp
+L CONN_01X15 J?
+U 1 1 598B2CA4
+P 4150 3900
+F 0 "J?" H 4150 4700 50  0000 C CNN
+F 1 "CONN_01X15" V 4250 3900 50  0000 C CNN
+F 2 "" H 4150 3900 50  0001 C CNN
+F 3 "" H 4150 3900 50  0001 C CNN
+	1    4150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B2CAB
+P 3400 3800
+F 0 "F?" V 3325 3800 50  0000 C CNN
+F 1 "30mA/110Ω" V 3475 3800 50  0000 C CNN
+F 2 "" H 3450 3600 50  0001 L CNN
+F 3 "" H 3400 3800 50  0001 C CNN
+	1    3400 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B2CB2
+P 3750 3900
+F 0 "F?" V 3675 3900 50  0000 C CNN
+F 1 "30mA/110Ω" V 3825 3900 50  0000 C CNN
+F 2 "" H 3800 3700 50  0001 L CNN
+F 3 "" H 3750 3900 50  0001 C CNN
+	1    3750 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B2CB9
+P 2500 4000
+F 0 "F?" V 2425 4000 50  0000 C CNN
+F 1 "30mA/110Ω" V 2575 4000 50  0000 C CNN
+F 2 "" H 2550 3800 50  0001 L CNN
+F 3 "" H 2500 4000 50  0001 C CNN
+	1    2500 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B2CC0
+P 2850 4100
+F 0 "F?" V 2775 4100 50  0000 C CNN
+F 1 "30mA/110Ω" V 2925 4100 50  0000 C CNN
+F 2 "" H 2900 3900 50  0001 L CNN
+F 3 "" H 2850 4100 50  0001 C CNN
+	1    2850 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B2CC7
+P 3200 4200
+F 0 "F?" V 3125 4200 50  0000 C CNN
+F 1 "30mA/110Ω" V 3275 4200 50  0000 C CNN
+F 2 "" H 3250 4000 50  0001 L CNN
+F 3 "" H 3200 4200 50  0001 C CNN
+	1    3200 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B2CCE
+P 3550 4300
+F 0 "F?" V 3475 4300 50  0000 C CNN
+F 1 "30mA/110Ω" V 3625 4300 50  0000 C CNN
+F 2 "" H 3600 4100 50  0001 L CNN
+F 3 "" H 3550 4300 50  0001 C CNN
+	1    3550 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B2CD5
+P 3100 4400
+F 0 "F?" V 3025 4400 50  0000 C CNN
+F 1 "30mA/110Ω" V 3175 4400 50  0000 C CNN
+F 2 "" H 3150 4200 50  0001 L CNN
+F 3 "" H 3100 4400 50  0001 C CNN
+	1    3100 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B2CDC
+P 3450 4500
+F 0 "F?" V 3375 4500 50  0000 C CNN
+F 1 "30mA/110Ω" V 3525 4500 50  0000 C CNN
+F 2 "" H 3500 4300 50  0001 L CNN
+F 3 "" H 3450 4500 50  0001 C CNN
+	1    3450 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse_Small F?
+U 1 1 598B2CE3
+P 3800 4600
+F 0 "F?" V 3725 4600 50  0000 C CNN
+F 1 "30mA/110Ω" V 3875 4600 50  0000 C CNN
+F 2 "" H 3850 4400 50  0001 L CNN
+F 3 "" H 3800 4600 50  0001 C CNN
+	1    3800 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B2CEA
+P 1800 4950
+F 0 "D?" H 1800 5050 50  0000 C CNN
+F 1 "3.4v" H 1800 4850 50  0000 C CNN
+F 2 "" H 1800 4950 50  0001 C CNN
+F 3 "" H 1800 4950 50  0001 C CNN
+	1    1800 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B2CF1
+P 1950 5100
+F 0 "D?" H 1950 5200 50  0000 C CNN
+F 1 "3.4v" H 1950 5000 50  0000 C CNN
+F 2 "" H 1950 5100 50  0001 C CNN
+F 3 "" H 1950 5100 50  0001 C CNN
+	1    1950 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B2CF8
+P 2100 4950
+F 0 "D?" H 2100 5050 50  0000 C CNN
+F 1 "3.4v" H 2100 4850 50  0000 C CNN
+F 2 "" H 2100 4950 50  0001 C CNN
+F 3 "" H 2100 4950 50  0001 C CNN
+	1    2100 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B2CFF
+P 2250 5100
+F 0 "D?" H 2250 5200 50  0000 C CNN
+F 1 "3.4v" H 2250 5000 50  0000 C CNN
+F 2 "" H 2250 5100 50  0001 C CNN
+F 3 "" H 2250 5100 50  0001 C CNN
+	1    2250 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B2D06
+P 2400 4950
+F 0 "D?" H 2400 5050 50  0000 C CNN
+F 1 "3.4v" H 2400 4850 50  0000 C CNN
+F 2 "" H 2400 4950 50  0001 C CNN
+F 3 "" H 2400 4950 50  0001 C CNN
+	1    2400 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B2D0D
+P 2550 5100
+F 0 "D?" H 2550 5200 50  0000 C CNN
+F 1 "3.4v" H 2550 5000 50  0000 C CNN
+F 2 "" H 2550 5100 50  0001 C CNN
+F 3 "" H 2550 5100 50  0001 C CNN
+	1    2550 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B2D14
+P 2700 4950
+F 0 "D?" H 2700 5050 50  0000 C CNN
+F 1 "3.4v" H 2700 4850 50  0000 C CNN
+F 2 "" H 2700 4950 50  0001 C CNN
+F 3 "" H 2700 4950 50  0001 C CNN
+	1    2700 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B2D1B
+P 2850 5100
+F 0 "D?" H 2850 5200 50  0000 C CNN
+F 1 "3.4v" H 2850 5000 50  0000 C CNN
+F 2 "" H 2850 5100 50  0001 C CNN
+F 3 "" H 2850 5100 50  0001 C CNN
+	1    2850 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 598B2D22
+P 3000 4950
+F 0 "D?" H 3000 5050 50  0000 C CNN
+F 1 "3.4v" H 3000 4850 50  0000 C CNN
+F 2 "" H 3000 4950 50  0001 C CNN
+F 3 "" H 3000 4950 50  0001 C CNN
+	1    3000 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 4800 1800 3800
+Connection ~ 1800 3800
+Wire Wire Line
+	1950 4950 1950 3900
+Connection ~ 1950 3900
+Wire Wire Line
+	2100 4800 2100 4000
+Connection ~ 2100 4000
+Wire Wire Line
+	2250 4950 2250 4100
+Connection ~ 2250 4100
+Wire Wire Line
+	2400 4800 2400 4200
+Connection ~ 2400 4200
+Wire Wire Line
+	2550 4950 2550 4300
+Connection ~ 2550 4300
+Wire Wire Line
+	2700 4800 2700 4400
+Connection ~ 2700 4400
+Wire Wire Line
+	2850 4950 2850 4500
+Connection ~ 2850 4500
+Wire Wire Line
+	3000 4800 3000 4600
+Connection ~ 3000 4600
+Wire Wire Line
+	1800 5100 1800 5450
+Wire Wire Line
+	1950 5250 1950 5450
+Connection ~ 1950 5450
+Wire Wire Line
+	2100 5450 2100 5100
+Connection ~ 2100 5450
+Wire Wire Line
+	2250 5450 2250 5250
+Connection ~ 2250 5450
+Wire Wire Line
+	2400 5450 2400 5100
+Connection ~ 2400 5450
+Wire Wire Line
+	2550 5450 2550 5250
+Connection ~ 2550 5450
+Wire Wire Line
+	2700 5450 2700 5100
+Connection ~ 2700 5450
+Wire Wire Line
+	2850 5450 2850 5250
+Connection ~ 2850 5450
+Wire Wire Line
+	3950 3800 3500 3800
+Wire Wire Line
+	3850 3900 3950 3900
+Wire Wire Line
+	3950 4000 2600 4000
+Wire Wire Line
+	2950 4100 3950 4100
+Wire Wire Line
+	3950 4200 3300 4200
+Wire Wire Line
+	3650 4300 3950 4300
+Wire Wire Line
+	3200 4400 3950 4400
+Wire Wire Line
+	3950 4500 3550 4500
+Wire Wire Line
+	3900 4600 3950 4600
+Text HLabel 1550 3800 0    60   Input ~ 0
+A1
+Text HLabel 1550 3900 0    60   Input ~ 0
+A2
+Text HLabel 1550 4000 0    60   Input ~ 0
+A3
+Text HLabel 1550 4100 0    60   Input ~ 0
+A4
+Text HLabel 1550 4200 0    60   Input ~ 0
+A5
+Text HLabel 1550 4300 0    60   Input ~ 0
+A6
+Text HLabel 1550 4400 0    60   Input ~ 0
+A7
+Text HLabel 1550 4500 0    60   Input ~ 0
+A8
+Text HLabel 1550 4600 0    60   Input ~ 0
+A9
+Wire Wire Line
+	850  5450 3000 5450
+Wire Wire Line
+	1550 3800 3300 3800
+Wire Wire Line
+	1550 3900 3650 3900
+Wire Wire Line
+	1550 4000 2400 4000
+Wire Wire Line
+	1550 4100 2750 4100
+Wire Wire Line
+	1550 4200 3100 4200
+Wire Wire Line
+	1550 4300 3450 4300
+Wire Wire Line
+	1550 4400 3000 4400
+Wire Wire Line
+	1550 4500 3350 4500
+Wire Wire Line
+	1550 4600 3700 4600
+$Comp
+L AVR-ISP-6 CON?
+U 1 1 598B341B
+P 5400 1300
+F 0 "CON?" H 5295 1540 50  0000 C CNN
+F 1 "AVR-ISP-6" H 5135 1070 50  0000 L BNN
+F 2 "AVR-ISP-6" V 4880 1340 50  0001 C CNN
+F 3 "" H 5375 1300 50  0001 C CNN
+	1    5400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 598B3426
+P 5900 1600
+F 0 "#PWR?" H 5900 1350 50  0001 C CNN
+F 1 "Earth" H 5900 1450 50  0001 C CNN
+F 2 "" H 5900 1600 50  0001 C CNN
+F 3 "" H 5900 1600 50  0001 C CNN
+	1    5900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 J?
+U 1 1 598B342C
+P 2050 1100
+F 0 "J?" H 2050 1450 50  0000 C CNN
+F 1 "FTDI" V 2150 1100 50  0000 C CNN
+F 2 "" H 2050 1100 50  0001 C CNN
+F 3 "" H 2050 1100 50  0001 C CNN
+	1    2050 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1400 5250 1400
+Wire Wire Line
+	4700 1300 5250 1300
+Wire Wire Line
+	4700 1200 5250 1200
+Wire Wire Line
+	5500 1300 6050 1300
+Wire Wire Line
+	5900 900  5900 1200
+Wire Wire Line
+	5900 1200 5500 1200
+Wire Wire Line
+	5900 1600 5900 1400
+Wire Wire Line
+	5900 1400 5500 1400
+Wire Wire Line
+	1450 1350 1850 1350
+Wire Wire Line
+	1850 1250 1450 1250
+Wire Wire Line
+	1450 1150 1850 1150
+Wire Wire Line
+	1850 1050 1450 1050
+Wire Wire Line
+	900  850  1850 850 
+Wire Wire Line
+	900  950  1850 950 
+Wire Wire Line
+	10100 1400 9450 1400
+Connection ~ 10550 1600
+Wire Wire Line
+	9450 1600 10550 1600
+Wire Wire Line
+	10550 1200 10550 1750
+Wire Wire Line
+	9450 1200 10550 1200
+Wire Wire Line
+	9900 1300 9900 900 
+Wire Wire Line
+	9450 1300 9900 1300
+Wire Wire Line
+	8650 1600 9200 1600
+Wire Wire Line
+	8650 1400 9200 1400
+Wire Wire Line
+	8650 1300 9200 1300
+Wire Wire Line
+	8650 1200 9200 1200
+NoConn ~ 9450 1500
+NoConn ~ 9200 1500
+$Comp
+L Earth #PWR?
+U 1 1 598B41D6
+P 10550 1750
+F 0 "#PWR?" H 10550 1500 50  0001 C CNN
+F 1 "Earth" H 10550 1600 50  0001 C CNN
+F 2 "" H 10550 1750 50  0001 C CNN
+F 3 "" H 10550 1750 50  0001 C CNN
+	1    10550 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L AVR-JTAG-10 CON?
+U 1 1 598B41E0
+P 9400 1400
+F 0 "CON?" H 9230 1730 50  0000 C CNN
+F 1 "AVR-JTAG-10" H 9060 1070 50  0000 L BNN
+F 2 "AVR-JTAG-10" V 8830 1420 50  0001 C CNN
+F 3 "" H 9400 1400 50  0001 C CNN
+	1    9400 1400
+	1    0    0    -1  
+$EndComp
+Text HLabel 4700 1200 0    60   Input ~ 0
+MISO
+Text HLabel 4700 1300 0    60   Input ~ 0
+SCK
+Text HLabel 4700 1400 0    60   Input ~ 0
+RESET
+Text HLabel 6050 1300 2    60   Input ~ 0
+MOSI
+Text HLabel 5900 900  1    60   Input ~ 0
+VCC
+Text HLabel 1450 1050 0    60   Input ~ 0
+VCC
+Text HLabel 1450 1150 0    60   Input ~ 0
+RX0
+Text HLabel 1450 1250 0    60   Input ~ 0
+TX0
+Text HLabel 1450 1350 0    60   Input ~ 0
+RESET
+Text HLabel 8650 1200 0    60   Input ~ 0
+TCK
+Text HLabel 8650 1300 0    60   Input ~ 0
+TDO
+Text HLabel 8650 1400 0    60   Input ~ 0
+TMS
+Text HLabel 8600 1600 0    60   Input ~ 0
+TDI
+Text HLabel 10100 1400 2    60   Input ~ 0
+RESET
+Text HLabel 9900 900  1    60   Input ~ 0
+VCC
+$Comp
+L Earth #PWR?
+U 1 1 598B5604
+P 900 1550
+F 0 "#PWR?" H 900 1300 50  0001 C CNN
+F 1 "Earth" H 900 1400 50  0001 C CNN
+F 2 "" H 900 1550 50  0001 C CNN
+F 3 "" H 900 1550 50  0001 C CNN
+	1    900  1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  850  900  1550
+Connection ~ 900  1150
+Text HLabel 1550 3200 0    60   Input ~ 0
+RESET
+Text HLabel 1550 3300 0    60   Input ~ 0
+3.3V
+Text HLabel 1550 3400 0    60   Input ~ 0
+5V
+Text HLabel 1550 3700 0    60   Input ~ 0
+VIN
+$Comp
+L Earth #PWR?
+U 1 1 598B955E
+P 850 5650
+F 0 "#PWR?" H 850 5400 50  0001 C CNN
+F 1 "Earth" H 850 5500 50  0001 C CNN
+F 2 "" H 850 5650 50  0001 C CNN
+F 3 "" H 850 5650 50  0001 C CNN
+	1    850  5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  3500 850  5650
+Connection ~ 850  3600
+Wire Wire Line
+	3000 5450 3000 5100
+Connection ~ 850  5450
+Connection ~ 1800 5450
+$Comp
+L D_Schottky D?
+U 1 1 598DC814
+P 1900 3700
+F 0 "D?" H 1900 3800 50  0000 C CNN
+F 1 "30v 1A" H 1900 3600 50  0000 C CNN
+F 2 "" H 1900 3700 50  0001 C CNN
+F 3 "" H 1900 3700 50  0001 C CNN
+	1    1900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3700 1550 3700
+Wire Wire Line
+	2050 3700 3950 3700
+$EndSCHEMATC

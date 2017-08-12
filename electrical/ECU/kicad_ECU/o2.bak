@@ -1,0 +1,147 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:L9484
+LIBS:VB525SP-E
+LIBS:LMZ21701
+LIBS:Mini50p12
+LIBS:SI8610BC-B-IS
+LIBS:MAX6575LZUT+T
+LIBS:SI8380P-IU
+LIBS:Rect10si
+LIBS:AEDR-8710-102
+LIBS:MPXA4250AC6U
+LIBS:MPXA6115AC6U
+LIBS:CC2540T
+LIBS:icsp
+LIBS:MCP2561
+LIBS:switches
+LIBS:tom_kicad
+LIBS:2450bm14e0003
+LIBS:ftdi
+LIBS:LMZ20502
+LIBS:MIC45205
+LIBS:usbulc6-2m6
+LIBS:ESD7004
+LIBS:VNQ5027AKTR-E
+LIBS:BSC072N03LD-G
+LIBS:SI8620BC-B-IS
+LIBS:LMV822IQ2T
+LIBS:NTB0101AGWH
+LIBS:TLC6C598PWR
+LIBS:10si_rect
+LIBS:Mini50p16
+LIBS:LM2903Q2T
+LIBS:airhead_ecu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 32
+Title "O2 Sensor"
+Date ""
+Rev "0.1"
+Comp "Opensource Airhead"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4700 3250 0    60   Input ~ 0
+sensor
+Text HLabel 6050 2750 0    60   Input ~ 0
+ADC_clamp
+Text HLabel 6950 3250 2    60   Input ~ 0
+CPU
+$Comp
+L R R?
+U 1 1 597752E7
+P 5600 3250
+F 0 "R?" V 5680 3250 50  0000 C CNN
+F 1 "470" V 5600 3250 50  0000 C CNN
+F 2 "" V 5530 3250 50  0001 C CNN
+F 3 "" H 5600 3250 50  0001 C CNN
+	1    5600 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5977530D
+P 5100 3650
+F 0 "C?" H 5125 3750 50  0000 L CNN
+F 1 "0.1uF" H 5125 3550 50  0000 L CNN
+F 2 "" H 5138 3500 50  0001 C CNN
+F 3 "" H 5100 3650 50  0001 C CNN
+	1    5100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59775333
+P 6600 3650
+F 0 "C?" H 6625 3750 50  0000 L CNN
+F 1 "0.22uF" H 6625 3550 50  0000 L CNN
+F 2 "" H 6638 3500 50  0001 C CNN
+F 3 "" H 6600 3650 50  0001 C CNN
+	1    6600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 59775372
+P 6600 4300
+F 0 "#PWR?" H 6600 4050 50  0001 C CNN
+F 1 "Earth" H 6600 4150 50  0001 C CNN
+F 2 "" H 6600 4300 50  0001 C CNN
+F 3 "" H 6600 4300 50  0001 C CNN
+	1    6600 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3250 5450 3250
+Wire Wire Line
+	5100 3500 5100 3250
+Connection ~ 5100 3250
+Wire Wire Line
+	5750 3250 6950 3250
+Wire Wire Line
+	6600 3500 6600 3250
+Connection ~ 6600 3250
+Wire Wire Line
+	6600 3800 6600 4300
+Wire Wire Line
+	6050 2750 6050 3250
+Connection ~ 6050 3250
+Wire Wire Line
+	5100 3800 5100 4000
+Wire Wire Line
+	5100 4000 6600 4000
+Connection ~ 6600 4000
+$EndSCHEMATC

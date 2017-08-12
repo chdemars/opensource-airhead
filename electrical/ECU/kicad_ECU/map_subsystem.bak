@@ -1,0 +1,195 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:L9484
+LIBS:VB525SP-E
+LIBS:LMZ21701
+LIBS:Mini50p12
+LIBS:SI8610BC-B-IS
+LIBS:MAX6575LZUT+T
+LIBS:SI8380P-IU
+LIBS:Rect10si
+LIBS:AEDR-8710-102
+LIBS:MPXA4250AC6U
+LIBS:MPXA6115AC6U
+LIBS:CC2540T
+LIBS:icsp
+LIBS:MCP2561
+LIBS:switches
+LIBS:tom_kicad
+LIBS:2450bm14e0003
+LIBS:ftdi
+LIBS:LMZ20502
+LIBS:MIC45205
+LIBS:usbulc6-2m6
+LIBS:ESD7004
+LIBS:VNQ5027AKTR-E
+LIBS:BSC072N03LD-G
+LIBS:SI8620BC-B-IS
+LIBS:LMV822IQ2T
+LIBS:NTB0101AGWH
+LIBS:TLC6C598PWR
+LIBS:10si_rect
+LIBS:Mini50p16
+LIBS:LM2903Q2T
+LIBS:airhead_ecu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 14 32
+Title "Manifold Absolute Pressure"
+Date ""
+Rev "0.1"
+Comp "Opensource Airhead"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MPXA4250AC6U U?
+U 1 1 5921F130
+P 6150 3100
+AR Path="/5974D512/59776310/5921F130" Ref="U?"  Part="1" 
+AR Path="/5974D512/5977631A/5921F130" Ref="U?"  Part="1" 
+F 0 "U?" H 6150 3000 50  0000 C CNN
+F 1 "MPXA4250AC6U" H 6150 3200 50  0000 C CNN
+F 2 "MODULE" H 6150 3100 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6150 3100 50  0001 C CNN
+	1    6150 3100
+	1    0    0    -1  
+$EndComp
+Text HLabel 3500 3050 0    60   Input ~ 0
+5vdc
+$Comp
+L Earth #PWR?
+U 1 1 5929DA6E
+P 4250 4200
+AR Path="/5974D512/59776310/5929DA6E" Ref="#PWR?"  Part="1" 
+AR Path="/5974D512/5977631A/5929DA6E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4250 3950 50  0001 C CNN
+F 1 "Earth" H 4250 4050 50  0001 C CNN
+F 2 "" H 4250 4200 50  0001 C CNN
+F 3 "" H 4250 4200 50  0001 C CNN
+	1    4250 4200
+	1    0    0    -1  
+$EndComp
+Text HLabel 3500 3250 0    60   Input ~ 0
+PressA
+$Comp
+L R R?
+U 1 1 5929DB00
+P 5100 3250
+AR Path="/5974D512/59776310/5929DB00" Ref="R?"  Part="1" 
+AR Path="/5974D512/5977631A/5929DB00" Ref="R?"  Part="1" 
+F 0 "R?" V 5180 3250 50  0000 C CNN
+F 1 "470Ω" V 5100 3250 50  0000 C CNN
+F 2 "" V 5030 3250 50  0001 C CNN
+F 3 "" H 5100 3250 50  0001 C CNN
+	1    5100 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 3250 5250 3250
+Wire Wire Line
+	4950 3250 3500 3250
+Wire Wire Line
+	5400 3150 4250 3150
+Wire Wire Line
+	4250 3150 4250 4200
+Wire Wire Line
+	3500 3050 5400 3050
+$Comp
+L C C?
+U 1 1 5929DF2C
+P 4600 3600
+AR Path="/5974D512/59776310/5929DF2C" Ref="C?"  Part="1" 
+AR Path="/5974D512/5977631A/5929DF2C" Ref="C?"  Part="1" 
+F 0 "C?" H 4625 3700 50  0000 L CNN
+F 1 "0.3μF" H 4625 3500 50  0000 L CNN
+F 2 "" H 4638 3450 50  0001 C CNN
+F 3 "" H 4600 3600 50  0001 C CNN
+	1    4600 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3900 4600 3750
+Wire Wire Line
+	3700 3900 4600 3900
+Connection ~ 4250 3900
+Wire Wire Line
+	4600 3450 4600 3250
+Connection ~ 4600 3250
+$Comp
+L C C?
+U 1 1 5929DFD9
+P 4050 3600
+AR Path="/5974D512/59776310/5929DFD9" Ref="C?"  Part="1" 
+AR Path="/5974D512/5977631A/5929DFD9" Ref="C?"  Part="1" 
+F 0 "C?" H 4075 3700 50  0000 L CNN
+F 1 "0.01μF" H 4075 3500 50  0000 L CNN
+F 2 "" H 4088 3450 50  0001 C CNN
+F 3 "" H 4050 3600 50  0001 C CNN
+	1    4050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5929DFF8
+P 3700 3600
+AR Path="/5974D512/59776310/5929DFF8" Ref="C?"  Part="1" 
+AR Path="/5974D512/5977631A/5929DFF8" Ref="C?"  Part="1" 
+F 0 "C?" H 3725 3700 50  0000 L CNN
+F 1 "1μF" H 3725 3500 50  0000 L CNN
+F 2 "" H 3738 3450 50  0001 C CNN
+F 3 "" H 3700 3600 50  0001 C CNN
+	1    3700 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3750 3700 3900
+Wire Wire Line
+	4050 3750 4050 3900
+Connection ~ 4050 3900
+Wire Wire Line
+	3700 3450 3700 3050
+Connection ~ 3700 3050
+Wire Wire Line
+	3700 3350 4050 3350
+Wire Wire Line
+	4050 3350 4050 3450
+Connection ~ 3700 3350
+NoConn ~ 5400 2950
+NoConn ~ 6900 2950
+NoConn ~ 6900 3050
+NoConn ~ 6900 3150
+NoConn ~ 6900 3250
+$EndSCHEMATC

@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0049)http://www.recursion.jp/prose/avrcdc/cdc-232.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>AVR-CDC</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="imagetoolbar" content="no">
+<link href="./AVR-CDC_files/default.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="bg">
+<div id="head">
+	<h1>Virtual COM Port over Low-Speed USB</h1>
+	<p id="logo"><a href="http://www.recursion.jp/prose/avrcdc/">AVR-CDC</a></p>
+</div>
+
+
+<div id="head_menu">
+	<ul>
+		<li><a href="http://www.recursion.jp/prose/prose/">Home</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/index.html">About</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/cdc-232.html">CDC-232</a></li>			
+		<li><a href="http://www.recursion.jp/prose/avrcdc/cdc-io.html">CDC-IO</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/cdc-spi.html">CDC-SPI</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/driver.html">Driver</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/download.html">Download</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/faq.html">FAQ</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/refers.html">Reference</a></li>
+	</ul>
+</div>
+
+
+<div id="contents">
+
+
+<div id="left_menu">
+	<ul>
+		<li class="title">&gt;<a href="http://www.recursion.jp/prose/avrcdc/index.html">About</a></li>
+	</ul>
+	
+	<ul>
+		<li class="title">CDC-232</li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/cdc-232.html#usage">Usage</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/cdc-232.html#schematic">Schematics</a></li>
+	</ul>
+	<ul>
+		<li class="title">CDC-IO</li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/cdc-io.html#usage">Usage</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/cdc-io.html#schematic">Schematics</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/cdc-io.html#sample">Sample Program</a></li>
+	</ul>
+	<ul>
+		<li class="title">CDC-SPI</li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/cdc-spi.html#usage">Usage</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/cdc-spi.html#schematic">Schematics</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/cdc-spi.html#sample">Sample Program</a></li>
+	</ul>
+
+	<ul>
+		<li class="title">Driver</li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/driver.html#protocol">CDC Protocol</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/driver.html#windows">Windows</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/driver.html#mac">Mac OS</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/driver.html#linux">Linux</a></li>
+	</ul>
+
+	<ul>
+		<li class="title">FAQ</li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/faq.html#device">Device Recognition</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/faq.html#communication">Communication Problem</a></li>
+		<li><a href="http://www.recursion.jp/prose/avrcdc/faq.html#others">Others</a></li>
+	</ul>
+
+	<ul>
+		<li class="title">&gt;<a href="http://www.recursion.jp/prose/avrcdc/download.html">Download</a><br></li>
+	</ul>
+
+	<ul>
+		<li class="title">&gt;<a href="http://www.recursion.jp/prose/avrcdc/refers.html">Reference</a><br></li>
+	</ul>
+</div>
+
+<div id="main">
+<div id="other_page">
+<font face="Times New Roman" size="2">
+
+<h2>CDC-232</h2>
+
+	<div class="obj">
+		<p style="text-align: justify"><font size="2">CDC-232 creates a virtual COM port on PC that doesn't have real RS- 232C port. It enables RS-232C communication (without control lines), after connecting the device and installing the driver.</font><br>
+&nbsp;</p>
+		<p style="text-align: center">
+        <img border="0" src="./AVR-CDC_files/cdc232-fig.gif" width="434" height="189"></p>
+		<p style="text-align: center">Virtual COM Port over Software-USB</p>
+	</div>
+
+<h3><a name="usage">Usage</a></h3>
+	
+	<div class="obj">
+		<p style="text-align: justify"><font size="2">Write the program to AVR, build the circuit, and connect the device  to PC's USB port. Install the driver on Windows. Access the device  through generated virtual COM port from terminal software or your  application.
+ Control lines (DTR, DTS, RTS, CTS) are not used by the host application. Set the terminal  software as "no flow-control".<br>
+Windows requests the driver installation again when connected to  other USB port. Detect the previously installed driver automatically.  Another COM number will be assigned. If you set serial number in AVR  (rebuild with modified usbconfig.h), you can get the same COM port at  any USB port. However, you cannot connect multiple CDC devices of the  same serial number.<br>
+Before detaching the device, close the COM port in terminal software  or in your application. Otherwise, you cannot connect to the device  again because of the broken file handle. Restart the terminal  software or your application then.
+ Switch to the fast transfer mode using "lowcdc.vbs" to get the  baudrate higher than 9600bps.</font><br></p>
+		<p style="text-align: center">
+        <img border="0" src="./AVR-CDC_files/cdc232-photo1.gif" width="243" height="148"></p>
+		<p style="text-align: center">Loop-back test on ATtiny45 version</p>
+	</div>
+
+<h3><a name="schematic">Schematics</a></h3>
+	
+	<div class="obj">
+<p style="text-align: justify"><font size="2">
+These schematics are for ATtiny45/85, ATtiny2313/AT90S2313, and  ATmega8/48/88/168. Their firmware are all ISP-programmable.
+The red LED drops the USB voltage from 5V to 3.3V, and provides to  AVR. The current is about 10mA, and is not enough to drive other  circuit.
+When connecting to other MCU, connect Gnd and connect TxD and RxD in  crossing way. R4 limits the leak current when the MCU's Vcc is 5V.  You can omit if the Vcc is equal. R5 protects the TxD pin when it  shortened to Gnd. You can omit both R4 and R5 if you connect to the RS- 232C driver like MAX232. Use crystal oscillator. Although ceramic resonator works well in most  cases, it becomes unstable if the frequency deviation is bigger.
+</font></p>
+<p style="text-align: justify"><font size="2">
+ATtiny45/85 uses internal RC oscillator and PLL. 
+It is calibrated by&nbsp; USB signal when connected. UART is implemented by software. It is  not enough for high speed data transfer. If the TxD and the RxD are  inverted (rebuild with -DUART_INVERT option), you can directly connect to  RS-232C line.&nbsp;&nbsp;&nbsp;&nbsp; 
+1200 - 4800bps, 8N1</font><br>
+&nbsp;
+</p>
+		<p style="text-align: center">
+        <img border="0" src="./AVR-CDC_files/cdc232-t45.png"></p>
+		<p style="text-align: center">CDC-232 for ATtiny45-20</p>
+		<p style="text-align: center">
+        <img border="0" src="./AVR-CDC_files/cdc232-photo2.gif" width="213" height="158">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img border="0" src="./AVR-CDC_files/cdc232-photo3.gif" width="150" height="150"><br>
+        ATtiny45 example using mini-B connector</p>
+<p style="text-align: justify"><font size="2">ATtiny2313/AT90S2313 has 2KB program memory. Although the baudrate is configured automatically, some functions are omitted.&nbsp;&nbsp;&nbsp;600 - 38400bps, 8N1</font></p>
+		<p style="text-align: center">
+        <img border="0" src="./AVR-CDC_files/cdc232-2313.png"><br>
+        <br>
+        CDC-232 for ATtiny2313-20</p>
+		<p style="text-align: justify"><font size="2">ATmega8/48/88's internal UART is configured from the PC. The flow-control (RTS/CTS) is supported.<br>
+        600 - 38400bps, data 7/8, parity N/E/O, stop 1/2</font></p>
+		<p style="text-align: center">
+        <img border="0" src="./AVR-CDC_files/cdc232-mega.png"><br>
+        <br>
+        CDC-232 for ATmega8/48/88-20</p>
+		<p style="text-align: justify">
+        <br>
+        <font size="2">Connecting to the RS-232C channel requires TxD and RxD inverting the  polarity and matching the level. Use the dedicated IC like MAX232.  You can substitute this simple circuit for it.</font></p>
+		<p style="text-align: center">
+        <img border="0" src="./AVR-CDC_files/cdc232-if1.gif" width="401" height="221"></p>
+		<p style="text-align: justify">
+        <br>
+        <font size="2">When the target MCU has a different Vcc, it causes leaking current  through the signal lines. This corrupts the signal, or drives the MCU  without power supply. This circuit is not perfect, but is enough for  most cases.</font></p>
+		<p style="text-align: center">
+        <img border="0" src="./AVR-CDC_files/cdc232-if2.gif" width="517" height="151"><br>
+&nbsp;</p>
+	</div>
+
+
+</font>
+</div><!-- other_page end -->
+</div><!-- main end -->
+<!--?@???@?y?[?W???????@???@-->
+
+</div>
+
+
+<div id="foot">
+<p>copyright (c)<script type="text/javascript">document.write(new Date().getFullYear())</script>2017 <a href="http://www.recursion.jp/prose/avrcdc/">Osamu Tamura @ Recursion Co., Ltd.</a> All rights reserved.</p>
+</div><!-- foot end-->
+</div>
+
+
+<!--?????�E�?\?????���E??ȁE?ŁE????????-->
+<div id="p-copy">
+	<p><a href="http://pondt.com/" target="_blank">?e???v???[?g??ondt</a></p>
+</div>
+
+
+
+
+
+</body></html>

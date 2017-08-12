@@ -1,0 +1,183 @@
+EESchema Schematic File Version 2
+LIBS:airhead_ecu-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:L9484
+LIBS:VB525SP-E
+LIBS:LMZ21701
+LIBS:Mini50p12
+LIBS:SI8610BC-B-IS
+LIBS:MAX6575LZUT+T
+LIBS:SI8380P-IU
+LIBS:Rect10si
+LIBS:AEDR-8710-102
+LIBS:MPXA4250AC6U
+LIBS:MPXA6115AC6U
+LIBS:CC2540T
+LIBS:icsp
+LIBS:MCP2561
+LIBS:switches
+LIBS:tom_kicad
+LIBS:2450bm14e0003
+LIBS:ftdi
+LIBS:LMZ20502
+LIBS:MIC45205
+LIBS:usbulc6-2m6
+LIBS:ESD7004
+LIBS:VNQ5027AKTR-E
+LIBS:BSC072N03LD-G
+LIBS:SI8620BC-B-IS
+LIBS:LMV822IQ2T
+LIBS:NTB0101AGWH
+LIBS:TLC6C598PWR
+LIBS:10si_rect
+LIBS:Mini50p16
+LIBS:LM2903Q2T
+LIBS:airhead_ecu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 33
+Title "Antenna"
+Date ""
+Rev "0.1"
+Comp "Opensource Airhead"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 2450BM14E0003 B?
+U 1 1 59818520
+P 5750 3350
+F 0 "B?" H 5450 3750 60  0000 L CNN
+F 1 "2450BM14E0003" H 5750 2950 60  0000 C CNN
+F 2 "" H 5750 3350 60  0000 C CNN
+F 3 "" H 5750 3350 60  0000 C CNN
+	1    5750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 59818529
+P 5100 3750
+F 0 "#PWR?" H 5100 3500 50  0001 C CNN
+F 1 "Earth" H 5100 3600 50  0001 C CNN
+F 2 "" H 5100 3750 50  0001 C CNN
+F 3 "" H 5100 3750 50  0001 C CNN
+	1    5100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5981852F
+P 6400 3750
+F 0 "#PWR?" H 6400 3500 50  0001 C CNN
+F 1 "Earth" H 6400 3600 50  0001 C CNN
+F 2 "" H 6400 3750 50  0001 C CNN
+F 3 "" H 6400 3750 50  0001 C CNN
+	1    6400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L?
+U 1 1 59818535
+P 6750 3200
+F 0 "L?" V 6700 3200 50  0000 C CNN
+F 1 "LQG15HH6N2S02D" V 6825 3200 50  0000 C CNN
+F 2 "" H 6750 3200 50  0001 C CNN
+F 3 "" H 6750 3200 50  0001 C CNN
+	1    6750 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Antenna AE?
+U 1 1 5981853C
+P 7550 3000
+F 0 "AE?" H 7475 3075 50  0000 R CNN
+F 1 "146175" H 7475 3000 50  0000 R CNN
+F 2 "" H 7550 3000 50  0001 C CNN
+F 3 "" H 7550 3000 50  0001 C CNN
+	1    7550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L?
+U 1 1 59818543
+P 7200 3650
+F 0 "L?" V 7150 3650 50  0000 C CNN
+F 1 "LQG15HH5N6S02D" V 7275 3650 50  0000 C CNN
+F 2 "" H 7200 3650 50  0001 C CNN
+F 3 "" H 7200 3650 50  0001 C CNN
+	1    7200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5981854A
+P 7200 4100
+F 0 "#PWR?" H 7200 3850 50  0001 C CNN
+F 1 "Earth" H 7200 3950 50  0001 C CNN
+F 2 "" H 7200 4100 50  0001 C CNN
+F 3 "" H 7200 4100 50  0001 C CNN
+	1    7200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3350 5250 3350
+Wire Wire Line
+	4850 3200 5250 3200
+Wire Wire Line
+	5250 3500 5100 3500
+Wire Wire Line
+	5100 3500 5100 3750
+Wire Wire Line
+	6250 3500 6400 3500
+Wire Wire Line
+	6400 3350 6400 3750
+Wire Wire Line
+	6250 3350 6400 3350
+Connection ~ 6400 3500
+Wire Wire Line
+	6250 3200 6600 3200
+Wire Wire Line
+	6900 3200 7550 3200
+Wire Wire Line
+	7200 4100 7200 3800
+Wire Wire Line
+	7200 3500 7200 3200
+Connection ~ 7200 3200
+Text HLabel 4850 3200 0    60   Input ~ 0
+RFN
+Text HLabel 4850 3350 0    60   Input ~ 0
+RFP
+$EndSCHEMATC

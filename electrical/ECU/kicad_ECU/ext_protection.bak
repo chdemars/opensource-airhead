@@ -1,0 +1,235 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:L9484
+LIBS:VB525SP-E
+LIBS:LMZ21701
+LIBS:Mini50p12
+LIBS:SI8610BC-B-IS
+LIBS:MAX6575LZUT+T
+LIBS:SI8380P-IU
+LIBS:Rect10si
+LIBS:AEDR-8710-102
+LIBS:MPXA4250AC6U
+LIBS:MPXA6115AC6U
+LIBS:CC2540T
+LIBS:icsp
+LIBS:MCP2561
+LIBS:switches
+LIBS:tom_kicad
+LIBS:2450bm14e0003
+LIBS:ftdi
+LIBS:LMZ20502
+LIBS:MIC45205
+LIBS:usbulc6-2m6
+LIBS:ESD7004
+LIBS:VNQ5027AKTR-E
+LIBS:BSC072N03LD-G
+LIBS:SI8620BC-B-IS
+LIBS:LMV822IQ2T
+LIBS:NTB0101AGWH
+LIBS:TLC6C598PWR
+LIBS:10si_rect
+LIBS:Mini50p16
+LIBS:LM2903Q2T
+LIBS:airhead_ecu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 29 32
+Title "External pin protection"
+Date ""
+Rev "0.1"
+Comp "Opensource Airhead"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 6650 2550 2    60   BiDi ~ 0
+OUT1
+$Comp
+L Polyfuse 30mA?
+U 1 1 597FE5B1
+P 6400 2550
+F 0 "30mA?" V 6300 2550 50  0000 C CNN
+F 1 "Polyfuse" V 6500 2550 50  0000 C CNN
+F 2 "" H 6450 2350 50  0001 L CNN
+F 3 "" H 6400 2550 50  0001 C CNN
+	1    6400 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 2550 6250 2550
+$Comp
+L D_Zener 3.38v?
+U 1 1 597FE5BA
+P 5200 3900
+F 0 "3.38v?" H 5200 4000 50  0000 C CNN
+F 1 "D_Zener" H 5200 3800 50  0000 C CNN
+F 2 "" H 5200 3900 50  0001 C CNN
+F 3 "" H 5200 3900 50  0001 C CNN
+	1    5200 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 2550 6650 2550
+Wire Wire Line
+	5200 3450 5200 3750
+Wire Wire Line
+	5200 4050 5200 4200
+Text HLabel 6650 2850 2    60   BiDi ~ 0
+OUT2
+$Comp
+L Polyfuse 30mA?
+U 1 1 597FE5C5
+P 6400 2850
+F 0 "30mA?" V 6300 2850 50  0000 C CNN
+F 1 "Polyfuse" V 6500 2850 50  0000 C CNN
+F 2 "" H 6450 2650 50  0001 L CNN
+F 3 "" H 6400 2850 50  0001 C CNN
+	1    6400 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 2850 6250 2850
+$Comp
+L D_Zener 3.38v?
+U 1 1 597FE5CE
+P 5500 3900
+F 0 "3.38v?" H 5500 4000 50  0000 C CNN
+F 1 "D_Zener" H 5500 3800 50  0000 C CNN
+F 2 "" H 5500 3900 50  0001 C CNN
+F 3 "" H 5500 3900 50  0001 C CNN
+	1    5500 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 2850 6650 2850
+Wire Wire Line
+	5500 3150 5500 3750
+Wire Wire Line
+	5500 4050 5500 4200
+Text HLabel 6650 3150 2    60   BiDi ~ 0
+OUT3
+$Comp
+L Polyfuse 30mA?
+U 1 1 597FE5D9
+P 6400 3150
+F 0 "30mA?" V 6300 3150 50  0000 C CNN
+F 1 "Polyfuse" V 6500 3150 50  0000 C CNN
+F 2 "" H 6450 2950 50  0001 L CNN
+F 3 "" H 6400 3150 50  0001 C CNN
+	1    6400 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3150 6250 3150
+$Comp
+L D_Zener 3.38v?
+U 1 1 597FE5E2
+P 5800 3900
+F 0 "3.38v?" H 5800 4000 50  0000 C CNN
+F 1 "D_Zener" H 5800 3800 50  0000 C CNN
+F 2 "" H 5800 3900 50  0001 C CNN
+F 3 "" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 597FE5E9
+P 5650 4350
+F 0 "#PWR?" H 5650 4100 50  0001 C CNN
+F 1 "Earth" H 5650 4200 50  0001 C CNN
+F 2 "" H 5650 4350 50  0001 C CNN
+F 3 "" H 5650 4350 50  0001 C CNN
+	1    5650 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3150 6650 3150
+Wire Wire Line
+	5800 2850 5800 3750
+Wire Wire Line
+	5800 4050 5800 4200
+Text HLabel 6650 3450 2    60   BiDi ~ 0
+OUT4
+$Comp
+L Polyfuse 30mA?
+U 1 1 597FE5F3
+P 6400 3450
+F 0 "30mA?" V 6300 3450 50  0000 C CNN
+F 1 "Polyfuse" V 6500 3450 50  0000 C CNN
+F 2 "" H 6450 3250 50  0001 L CNN
+F 3 "" H 6400 3450 50  0001 C CNN
+	1    6400 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3450 6250 3450
+$Comp
+L D_Zener 3.38v?
+U 1 1 597FE5FC
+P 6100 3900
+F 0 "3.38v?" H 6100 4000 50  0000 C CNN
+F 1 "D_Zener" H 6100 3800 50  0000 C CNN
+F 2 "" H 6100 3900 50  0001 C CNN
+F 3 "" H 6100 3900 50  0001 C CNN
+	1    6100 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 3450 6650 3450
+Wire Wire Line
+	6100 2550 6100 3750
+Wire Wire Line
+	6100 4050 6100 4200
+Wire Wire Line
+	6100 4200 5200 4200
+Connection ~ 5500 4200
+Connection ~ 5800 4200
+Wire Wire Line
+	5650 4350 5650 4200
+Connection ~ 5650 4200
+Connection ~ 5200 3450
+Connection ~ 5500 3150
+Connection ~ 5800 2850
+Connection ~ 6100 2550
+Text HLabel 4850 2550 0    60   BiDi ~ 0
+PIN1
+Text HLabel 4850 2850 0    60   BiDi ~ 0
+PIN2
+Text HLabel 4850 3150 0    60   BiDi ~ 0
+PIN3
+Text HLabel 4850 3450 0    60   BiDi ~ 0
+PIN4
+$EndSCHEMATC

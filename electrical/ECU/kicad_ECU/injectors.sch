@@ -1,0 +1,283 @@
+EESchema Schematic File Version 2
+LIBS:airhead_ecu-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:L9484
+LIBS:VB525SP-E
+LIBS:LMZ21701
+LIBS:Mini50p12
+LIBS:SI8610BC-B-IS
+LIBS:MAX6575LZUT+T
+LIBS:SI8380P-IU
+LIBS:Rect10si
+LIBS:AEDR-8710-102
+LIBS:MPXA4250AC6U
+LIBS:MPXA6115AC6U
+LIBS:CC2540T
+LIBS:icsp
+LIBS:MCP2561
+LIBS:switches
+LIBS:tom_kicad
+LIBS:2450bm14e0003
+LIBS:ftdi
+LIBS:LMZ20502
+LIBS:MIC45205
+LIBS:usbulc6-2m6
+LIBS:ESD7004
+LIBS:VNQ5027AKTR-E
+LIBS:BSC072N03LD-G
+LIBS:SI8620BC-B-IS
+LIBS:LMV822IQ2T
+LIBS:NTB0101AGWH
+LIBS:TLC6C598PWR
+LIBS:10si_rect
+LIBS:Mini50p16
+LIBS:LM2903Q2T
+LIBS:airhead_ecu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 18 33
+Title "Injectors"
+Date ""
+Rev "0.1"
+Comp "Opensource Airhead"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BSC072N03LD-G U?
+U 1 1 5977A542
+P 7250 3250
+F 0 "U?" H 7250 3150 50  0000 C CNN
+F 1 "BSC072N03LD-G" H 7250 3350 50  0000 C CNN
+F 2 "MODULE" H 7250 3250 50  0001 C CNN
+F 3 "DOCUMENTATION" H 7250 3250 50  0001 C CNN
+	1    7250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5977A637
+P 6250 4100
+F 0 "#PWR?" H 6250 3850 50  0001 C CNN
+F 1 "Earth" H 6250 3950 50  0001 C CNN
+F 2 "" H 6250 4100 50  0001 C CNN
+F 3 "" H 6250 4100 50  0001 C CNN
+	1    6250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5977A67E
+P 5850 3200
+F 0 "R?" V 5930 3200 50  0000 C CNN
+F 1 "1k" V 5850 3200 50  0000 C CNN
+F 2 "" V 5780 3200 50  0001 C CNN
+F 3 "" H 5850 3200 50  0001 C CNN
+	1    5850 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5977A6ED
+P 5850 3400
+F 0 "R?" V 5930 3400 50  0000 C CNN
+F 1 "1k" V 5850 3400 50  0000 C CNN
+F 2 "" V 5780 3400 50  0001 C CNN
+F 3 "" H 5850 3400 50  0001 C CNN
+	1    5850 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5977A71B
+P 5500 3700
+F 0 "R?" V 5580 3700 50  0000 C CNN
+F 1 "100k" V 5500 3700 50  0000 C CNN
+F 2 "" V 5430 3700 50  0001 C CNN
+F 3 "" H 5500 3700 50  0001 C CNN
+	1    5500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5977A73E
+P 5250 3700
+F 0 "R?" V 5330 3700 50  0000 C CNN
+F 1 "100k" V 5250 3700 50  0000 C CNN
+F 2 "" V 5180 3700 50  0001 C CNN
+F 3 "" H 5250 3700 50  0001 C CNN
+	1    5250 3700
+	1    0    0    -1  
+$EndComp
+Text HLabel 4650 3200 0    60   Input ~ 0
+INJ1-CPU
+Text HLabel 4650 3400 0    60   Input ~ 0
+INJ2-CPU
+$Comp
+L D D?
+U 1 1 5977A82B
+P 7700 2600
+F 0 "D?" H 7700 2700 50  0000 C CNN
+F 1 "1N4004" H 7700 2500 50  0000 C CNN
+F 2 "" H 7700 2600 50  0001 C CNN
+F 3 "" H 7700 2600 50  0001 C CNN
+	1    7700 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED-RESCUE-airhead_ecu D?
+U 1 1 5977A89D
+P 6900 2600
+F 0 "D?" H 6900 2700 50  0000 C CNN
+F 1 "LED" H 6900 2500 50  0000 C CNN
+F 2 "" H 6900 2600 50  0001 C CNN
+F 3 "" H 6900 2600 50  0001 C CNN
+	1    6900 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5977A8EA
+P 6050 2600
+F 0 "R?" V 6130 2600 50  0000 C CNN
+F 1 "680" V 6050 2600 50  0000 C CNN
+F 2 "" V 5980 2600 50  0001 C CNN
+F 3 "" H 6050 2600 50  0001 C CNN
+	1    6050 2600
+	0    1    1    0   
+$EndComp
+Text HLabel 4650 2600 0    60   Input ~ 0
+12v
+$Comp
+L D D?
+U 1 1 5977AA87
+P 7700 4550
+F 0 "D?" H 7700 4650 50  0000 C CNN
+F 1 "1N4004" H 7700 4450 50  0000 C CNN
+F 2 "" H 7700 4550 50  0001 C CNN
+F 3 "" H 7700 4550 50  0001 C CNN
+	1    7700 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-airhead_ecu D?
+U 1 1 5977AA8D
+P 6900 4550
+F 0 "D?" H 6900 4650 50  0000 C CNN
+F 1 "LED" H 6900 4450 50  0000 C CNN
+F 2 "" H 6900 4550 50  0001 C CNN
+F 3 "" H 6900 4550 50  0001 C CNN
+	1    6900 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5977AA93
+P 6050 4550
+F 0 "R?" V 6130 4550 50  0000 C CNN
+F 1 "680" V 6050 4550 50  0000 C CNN
+F 2 "" V 5980 4550 50  0001 C CNN
+F 3 "" H 6050 4550 50  0001 C CNN
+	1    6050 4550
+	0    1    -1   0   
+$EndComp
+Text HLabel 4650 4550 0    60   Input ~ 0
+12v
+Wire Wire Line
+	6500 3100 6250 3100
+Wire Wire Line
+	6250 3100 6250 4100
+Wire Wire Line
+	6500 3300 6250 3300
+Connection ~ 6250 3300
+Wire Wire Line
+	4650 3200 5700 3200
+Wire Wire Line
+	6000 3200 6500 3200
+Wire Wire Line
+	4650 3400 5700 3400
+Wire Wire Line
+	6000 3400 6500 3400
+Wire Wire Line
+	5500 3550 5500 3400
+Connection ~ 5500 3400
+Wire Wire Line
+	5250 3550 5250 3200
+Connection ~ 5250 3200
+Wire Wire Line
+	5250 3850 5250 3950
+Wire Wire Line
+	5250 3950 6250 3950
+Connection ~ 6250 3950
+Wire Wire Line
+	5500 3850 5500 3950
+Connection ~ 5500 3950
+Wire Wire Line
+	4650 2600 5900 2600
+Wire Wire Line
+	6200 2600 6750 2600
+Wire Wire Line
+	7050 2600 7550 2600
+Wire Wire Line
+	7850 2600 8900 2600
+Wire Wire Line
+	8200 2600 8200 3200
+Wire Wire Line
+	8200 3200 8000 3200
+Wire Wire Line
+	8000 3100 8200 3100
+Connection ~ 8200 3100
+Wire Wire Line
+	4650 4550 5900 4550
+Wire Wire Line
+	6200 4550 6750 4550
+Wire Wire Line
+	7050 4550 7550 4550
+Wire Wire Line
+	7850 4550 8900 4550
+Wire Wire Line
+	8200 3300 8200 4550
+Wire Wire Line
+	8000 3300 8200 3300
+Wire Wire Line
+	8000 3400 8200 3400
+Connection ~ 8200 3400
+Text HLabel 8900 2600 2    60   Input ~ 0
+INJ2-OUT
+Text HLabel 8900 4550 2    60   Input ~ 0
+INJ1-OUT
+Connection ~ 8200 2600
+Connection ~ 8200 4550
+$EndSCHEMATC
