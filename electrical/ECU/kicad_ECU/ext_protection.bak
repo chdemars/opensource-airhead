@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:airhead_ecu-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -64,7 +65,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 29 32
+Sheet 31 33
 Title "External pin protection"
 Date ""
 Rev "0.1"
@@ -77,11 +78,11 @@ $EndDescr
 Text HLabel 6650 2550 2    60   BiDi ~ 0
 OUT1
 $Comp
-L Polyfuse 30mA?
+L Polyfuse Polyfuse?
 U 1 1 597FE5B1
 P 6400 2550
-F 0 "30mA?" V 6300 2550 50  0000 C CNN
-F 1 "Polyfuse" V 6500 2550 50  0000 C CNN
+F 0 "Polyfuse?" V 6300 2550 50  0000 C CNN
+F 1 "30mA" V 6500 2550 50  0000 C CNN
 F 2 "" H 6450 2350 50  0001 L CNN
 F 3 "" H 6400 2550 50  0001 C CNN
 	1    6400 2550
@@ -90,11 +91,11 @@ $EndComp
 Wire Wire Line
 	4850 2550 6250 2550
 $Comp
-L D_Zener 3.38v?
+L D_Zener D_Zener?
 U 1 1 597FE5BA
 P 5200 3900
-F 0 "3.38v?" H 5200 4000 50  0000 C CNN
-F 1 "D_Zener" H 5200 3800 50  0000 C CNN
+F 0 "D_Zener?" H 5200 4000 50  0000 C CNN
+F 1 "3.38v" H 5200 3800 50  0000 C CNN
 F 2 "" H 5200 3900 50  0001 C CNN
 F 3 "" H 5200 3900 50  0001 C CNN
 	1    5200 3900
@@ -108,30 +109,8 @@ Wire Wire Line
 	5200 4050 5200 4200
 Text HLabel 6650 2850 2    60   BiDi ~ 0
 OUT2
-$Comp
-L Polyfuse 30mA?
-U 1 1 597FE5C5
-P 6400 2850
-F 0 "30mA?" V 6300 2850 50  0000 C CNN
-F 1 "Polyfuse" V 6500 2850 50  0000 C CNN
-F 2 "" H 6450 2650 50  0001 L CNN
-F 3 "" H 6400 2850 50  0001 C CNN
-	1    6400 2850
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4850 2850 6250 2850
-$Comp
-L D_Zener 3.38v?
-U 1 1 597FE5CE
-P 5500 3900
-F 0 "3.38v?" H 5500 4000 50  0000 C CNN
-F 1 "D_Zener" H 5500 3800 50  0000 C CNN
-F 2 "" H 5500 3900 50  0001 C CNN
-F 3 "" H 5500 3900 50  0001 C CNN
-	1    5500 3900
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6550 2850 6650 2850
 Wire Wire Line
@@ -140,35 +119,13 @@ Wire Wire Line
 	5500 4050 5500 4200
 Text HLabel 6650 3150 2    60   BiDi ~ 0
 OUT3
-$Comp
-L Polyfuse 30mA?
-U 1 1 597FE5D9
-P 6400 3150
-F 0 "30mA?" V 6300 3150 50  0000 C CNN
-F 1 "Polyfuse" V 6500 3150 50  0000 C CNN
-F 2 "" H 6450 2950 50  0001 L CNN
-F 3 "" H 6400 3150 50  0001 C CNN
-	1    6400 3150
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4850 3150 6250 3150
 $Comp
-L D_Zener 3.38v?
-U 1 1 597FE5E2
-P 5800 3900
-F 0 "3.38v?" H 5800 4000 50  0000 C CNN
-F 1 "D_Zener" H 5800 3800 50  0000 C CNN
-F 2 "" H 5800 3900 50  0001 C CNN
-F 3 "" H 5800 3900 50  0001 C CNN
-	1    5800 3900
-	0    1    1    0   
-$EndComp
-$Comp
-L Earth #PWR?
+L Earth #PWR079
 U 1 1 597FE5E9
 P 5650 4350
-F 0 "#PWR?" H 5650 4100 50  0001 C CNN
+F 0 "#PWR079" H 5650 4100 50  0001 C CNN
 F 1 "Earth" H 5650 4200 50  0001 C CNN
 F 2 "" H 5650 4350 50  0001 C CNN
 F 3 "" H 5650 4350 50  0001 C CNN
@@ -183,30 +140,8 @@ Wire Wire Line
 	5800 4050 5800 4200
 Text HLabel 6650 3450 2    60   BiDi ~ 0
 OUT4
-$Comp
-L Polyfuse 30mA?
-U 1 1 597FE5F3
-P 6400 3450
-F 0 "30mA?" V 6300 3450 50  0000 C CNN
-F 1 "Polyfuse" V 6500 3450 50  0000 C CNN
-F 2 "" H 6450 3250 50  0001 L CNN
-F 3 "" H 6400 3450 50  0001 C CNN
-	1    6400 3450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4850 3450 6250 3450
-$Comp
-L D_Zener 3.38v?
-U 1 1 597FE5FC
-P 6100 3900
-F 0 "3.38v?" H 6100 4000 50  0000 C CNN
-F 1 "D_Zener" H 6100 3800 50  0000 C CNN
-F 2 "" H 6100 3900 50  0001 C CNN
-F 3 "" H 6100 3900 50  0001 C CNN
-	1    6100 3900
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6550 3450 6650 3450
 Wire Wire Line
@@ -232,4 +167,70 @@ Text HLabel 4850 3150 0    60   BiDi ~ 0
 PIN3
 Text HLabel 4850 3450 0    60   BiDi ~ 0
 PIN4
+$Comp
+L Polyfuse Polyfuse?
+U 1 1 59961BEE
+P 6400 2850
+F 0 "Polyfuse?" V 6300 2850 50  0000 C CNN
+F 1 "30mA" V 6500 2850 50  0000 C CNN
+F 2 "" H 6450 2650 50  0001 L CNN
+F 3 "" H 6400 2850 50  0001 C CNN
+	1    6400 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse Polyfuse?
+U 1 1 59961C1E
+P 6400 3150
+F 0 "Polyfuse?" V 6300 3150 50  0000 C CNN
+F 1 "30mA" V 6500 3150 50  0000 C CNN
+F 2 "" H 6450 2950 50  0001 L CNN
+F 3 "" H 6400 3150 50  0001 C CNN
+	1    6400 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Polyfuse Polyfuse?
+U 1 1 59961C53
+P 6400 3450
+F 0 "Polyfuse?" V 6300 3450 50  0000 C CNN
+F 1 "30mA" V 6500 3450 50  0000 C CNN
+F 2 "" H 6450 3250 50  0001 L CNN
+F 3 "" H 6400 3450 50  0001 C CNN
+	1    6400 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D_Zener?
+U 1 1 59961CCE
+P 5500 3900
+F 0 "D_Zener?" H 5500 4000 50  0000 C CNN
+F 1 "3.38v" H 5500 3800 50  0000 C CNN
+F 2 "" H 5500 3900 50  0001 C CNN
+F 3 "" H 5500 3900 50  0001 C CNN
+	1    5500 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D_Zener?
+U 1 1 59961CF9
+P 5800 3900
+F 0 "D_Zener?" H 5800 4000 50  0000 C CNN
+F 1 "3.38v" H 5800 3800 50  0000 C CNN
+F 2 "" H 5800 3900 50  0001 C CNN
+F 3 "" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D_Zener?
+U 1 1 59961D22
+P 6100 3900
+F 0 "D_Zener?" H 6100 4000 50  0000 C CNN
+F 1 "3.38v" H 6100 3800 50  0000 C CNN
+F 2 "" H 6100 3900 50  0001 C CNN
+F 3 "" H 6100 3900 50  0001 C CNN
+	1    6100 3900
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
