@@ -1,0 +1,850 @@
+
+
+
+connectors:
+        bucket_board:
+                type: Contact Plate
+                manufacturer: BMW
+                mpn: 61 13 1 243 012
+                pincount: 46
+                pinlabels: [p15_1, p15_2, p15_3, p15_4, p15U_1, p15U_2, p58_1, p58_2, p58_3, p58_4, p58U_1, p58U_2, 
+                            pL_1, pL_2, pL_3, pL_4, p30_1, p30_2, p30_3, p30_4, pR_1, pR_2, pR_3, pR_4, pH_1, pH_2, 
+                            p56b_1, p56b_2, pLKK_1, pLKK_2, p85b_1, p85b_2, p56a_1, p56a_2, p56a_3, p56a_4, 
+                            p85_1, p85_2, p15UX_1, p15UX_2, p31_1, p31_2, p31_3, p31_4, p31_5, p31_6]
+                pincolors: [GNBK, GNBK, GNBK, GNBK, GN, GN, GYBK, GYBK, GYBK, GYBK, GY, GY, BURD, BURD, 
+                            BURD, BURD, RD, RD, RD, RD, BUBK, BUBK, BUBK, BUBK, BNWH, BNWH, YE, YE, BNBK, 
+                            BNBK, BNYE, BNYE, WH, WH, WH, WH, BUYE, BUYE, GNBU, GNBU, BN, BN, BN, BN, BN, BN]
+                            #                loops: [[p15_1, p15_2], [p15_1, p15_3], [p15_1, p15_4], [p15U_1, p15U_2], [p58_1, p58_2], [p58_1, p58_3], 
+                            #                        [p58_1, p58_4], [p58U_1, p58U_2], [pL_1, pL_2], [pL_1, pL_3], [pL_1, pL_4], [p30_1, p30_2], [p30_1, p30_3], 
+                            #                        [p30_1, p30_4], [pR_1, pR_2], [pR_1, pR_3], [pR_1, pR_4], [pH_1, pH_2], [p56b_1, p56b_2], [pLKK_1, pLKK_2], 
+                            #                        [p85b_1, p85b_2], [p56a_1, p56a_2], [p56a_1, p56a_3], [p56a_1, p56a_4], [p85_1, p85_2], [p15U_1, p15U_2], 
+                            #                        [p31_1, p31_2], [p31_1, p31_3], [p31_1, p31_4], [p31_1, p31_5], [p31_1, p31_6]]
+
+        left_control:
+                type: Left Control
+                manufacturer: Domino
+                mpn: 0060AA.9A
+                pincount: 9
+                pinlabels: [running_light, high_beam, ts_in, low_beam, ts_right, horn, lap, ts_left, pwr]
+                pincolors: [YE, WH, BUBK, BK, RD, GY, BUWH, TQ, GN]
+        
+                #        left_control_conn_f:
+                #                type: Left control female
+                #                manufacturer: Molex
+                #                mpn: MX-150 10pin
+                #                pinlabels: [running_light, high_beam, ts_in, low_beam, ts_right, horn, lap, ts_left, pwr]
+                #                pincolors: [YE, WH, BUBK, BK, RD, GY, BUWH, TQ, GN]
+
+                #        left_control_conn_m:
+                #                type: Left control male
+                #                manufacturer: Molex
+                #                mpn: MX-150 10pin
+                #                pinlabels: [running_light, high_beam, ts_in, low_beam, ts_right, horn, lap, ts_left, pwr]
+                #                pincolors: [YE, WH, BUBK, BK, RD, GY, BUWH, TQ, GN]
+
+
+
+        right_control:
+                type: Right Control
+                manufacturer: Domino
+                mpn: 0038AB.9A
+                pincount: 5
+                pinlabels: [starter_in, starter_out, ignition_in, ignition_out_nc, ignition_out_no]
+                pincolors: [BKWH, OG, BU, BK, BKYE]
+
+
+
+
+        instrument_cluster:
+                type: Instrument Cluster Connector
+                manufacturer: motobins.co.uk
+                mpn: ZZ62999
+                pincount: 12
+                pinlabels: [indicator_relay, oil_press_switch, illumination, starter_relay, brake_fluid_switch, neutral_switch, gnd, high_beam, NC, NC, NC, vcc]
+                pincolors: [BKWH, BNGN, GYBK, BU, BNBU, BNBK, BN, WH, IV, IV, IV, GNBK]
+       
+        horn_l:
+                type: AM80 Horn
+                manufacturer: FIAMM
+                mpn: 35717
+                pincount: 2
+                pinlabels: [horn_vcc, horn_gnd]
+                pincolors: [RD, BK]
+        horn_r:
+                type: AM80 Horn
+                manufacturer: FIAMM
+                mpn: 35717
+                pincount: 2
+                pinlabels: [horn_vcc, horn_gnd]
+                pincolors: [RD, BK]
+        
+                #        frame_gnd:
+                #                type: frame GND
+                #                pincount: 1
+                #                pinlabels: [gnd]
+                #                pincolors: [BN]
+                #
+        engine_gnd:
+                type: Engine GND
+                pincount: 1
+                pinlabels: [gnd]
+                pincolors: [BK]
+
+                #        rear_gnd:
+                #                type: Rear Ground
+                #                pincount: 1
+                #                pinlabels: [rear_gnd]
+                #                pincolors: [BN]
+                #
+        brake_switch_front:
+                type: Front Brake Switch
+                pincount: 2
+                pinlabels: [vcc, gnd]
+                pincolors: [GY, BK]
+
+        brake_switch_rear: 
+                type: Front Brake Switch
+                pincount: 2
+                pinlabels: [vcc, gnd]
+                pincolors: [GY, BK]
+        
+                #        clutch_switch:
+                #                type: Clutch Switch
+                #                pincount: 2
+                #                pinlabels: [vcc, gnd]     
+                #                pincolors: [BU, BK]     
+        
+        neutral_switch:
+                type: Neutral Switch
+                pincount: 1
+                pinlabels: [vcc]
+                pincolors: [BNBK]
+                
+        parking_light:
+                type: Parking Light BA9
+                pincount: 2
+                pinlabels: [vcc, gnd]
+                pincolors: [WHBK, BN]
+
+        headlight:
+                type: Headlight H4
+                pincount: 3
+                pinlabels: [high, low, gnd]
+                pincolors: [WH, YE, BN]
+
+        aux_brights:
+                type: 24v Cree high beams
+                pincount: 2
+                pinlabels: [vcc, gnd]        
+                
+        
+        # aux_out_1 = active with illumination
+        # aux_out_2x = active with ignition on
+        munit:
+                type: M.Unit Blue
+                manufacturer: Motogadget
+                pincount: 27
+                pinlabels: [gnd, bat, lock, start_in, turn_in_l, turn_in_r, horn_in, brake_in, light, lin, stand, kill, aux_in_1, aux_in_2, 
+                            start_1, start_2, turn_out_l, turn_out_r, horn_out, brake_out, light_out, h_beam, ignition, aux_out_1, aux_out_2a, aux_out_2b]
+        
+        press_temp_sensor:
+                type: Pressure Temperature Sensor
+                manufacturer: Bosch
+                mpn: F02UB00751-01
+                pincount: 5
+                pinlabels: [NC, press_out, vcc, gnd, temp_ntc_out]
+                additional_components: 
+                        -
+                                type: Sensor
+                                manufacturer: Bosch
+                                mpn: 0261230340
+
+        press_temp_gauge_f:
+                manufacturer: JST
+                mpn: 08R-JWPF-VSLE-D
+                pincount: 8
+                pinlabels: [switched_12v, gnd, headlight, oil_press_sensor_vcc, oil_press_sensor_gnd, oil_press_sensor_dat, oil_temp_sensor_out, oil_temp_sensor_in]
+                pincolors: [RD, BK, WH, YE, BKYE, BU, BKWH, BN]
+        
+        lambda_gauge_f:
+                manufacturer: JST
+                mpn: 08R-JWPF-VSLE-D
+                pincount: 8
+                pinlabels: [switched_12v, gnd, headlight, analog_out, out_vcc, out_gnd, out_tx, out_rx]
+                pincolors: [RD, BK, WH, YE, RD, BK, BU, WH]
+        
+        fairing_ts_m:
+                manufacturer: JST
+                mpn: 04R-JWPF-VSLE-S
+                pincount: 4
+                pinlabels: [left, gnd_l, right, gnd_r]
+                pincolors: [BUBK, BN, BURD, BN]
+        
+        serial_m:
+                manufacturer: JST
+                mpn: 04R-JWPF-VSLE-S
+                pincount: 4
+                pinlabels: [serial_vcc, serial_gnd, serial_tx, serial_rx]
+                pincolors: [RD, BK, BU, WH]
+        
+        sigout_m:
+                manufacturer: JST
+                mpn: 08T-JWPF-VSLE-D
+                pincount: 8
+                pinlabels: [o2, lin, ion, bfs_light, oil_light, lap_button, NC, NC]
+                pincolors: [YE, BK, BK, BK, BK, BK, BK, BK]
+        
+        battery:
+                type: 12v Battery
+                pincount: 2
+                pinlabels: [vcc, gnd]
+                pincolors: [RD, BK]
+                
+        starter:
+                type: Starter
+                manufacturer: Bosch
+                pincount: 2
+                pinlabels: [fifty, thirty]
+                pincolors: [BK, RD]
+
+        voltage_regulator_oem:
+                type: Voltage Regulator
+                pincount: 3
+                pinlabels: [DF, D-, D+]
+                pincolors: [BK, BN, BU]
+
+        diode_board:
+                type: Diode Board
+                pincount: 6
+                pinlabels: [D+, B+, Y, W, V, U]
+                pincolors: [BU, RD, BK, BK, BK]
+
+        alternator:
+                type: alternator
+                pincount: 6
+                pinlabels: [Y, D-, U, V, W, DF]
+                pincolors: [BK, BN, BK, BK, BK, BK]
+
+        dcdc_converter:
+                type: 10A 12v-24v DC-DC converter
+                pincount: 4
+                pinlabels: [12v+, 12v-, 24v-, 24v+]
+                pincolors: [RD, BK, BK, YE]
+        
+        turn_rear_rh:
+                type: Rear Turnsignal RH
+                pincount: 2
+                pinlabels: [turn_rear_rh, gnd]
+                pincolors: [BURD, BN]
+
+        turn_rear_lh:
+                type: Rear Turnsignal LH
+                pincount: 2
+                pinlabels: [turn_rear_lh, gnd]
+                pincolors: [BUBK, BN]
+
+        tail_light:
+                type: Tail Light
+                pincount: 2
+                pinlabels: [tail_light, gnd]
+                pincolors: [GYBK, BN]
+
+        brake_light:
+                type: Brake Light
+                pincount: 2
+                pinlabels: [brake_light, gnd]
+                pincolors: [GNRD, BN]
+
+        fuse_block:
+                type: Fuse Block
+                manufacturer: GEP
+                mpn: FRH-12-X
+                pincount: 12
+                pinlabels: [40A_in, 40A_out, 7A_in, 7A_out, lts_d_in, lts_d_out, rts_d_in, rts_d_out, h_beam_in, h_beam_o1, h_beam_o2, h_beam_o3]
+                pincolors: [RD, RD, RD, RD, BUBK, BUBK, BURD, BURD, BK, BK, BK, BK]                
+
+        ignition_switch:
+                type: Ignition Switch
+                manufacturer: BMW
+                mpn: 51 25 1 243 273
+                pincount: 4
+                pinlabels: [p56, p58, p50, p30]
+                pincolors: [GN, GY, GN, RD]
+
+        turn_handlebar_rh:
+                type: Handlebar Turnsignal RH
+                pincount: 2
+                pinlabels: [turn_hb_rh, gnd]
+                pincolors: [BURD, BN]
+
+        turn_handlebar_lh:
+                type: Handlebar Turnsignal LH
+                pincount: 2
+                pinlabels: [turn_hb_lh, gnd]
+                pincolors: [BUBK, BN]
+        coil:
+                type: Coil Connector
+                manufacturer: Delphi
+                mpn: 15439568
+                pincount: 4
+                pinlabels: [vcc, ion, coil_l, coil_r]
+                additional_components:
+                        -
+                                type: Coil
+                                manufacturer: Harley / Delphi
+                                mpn: 28058097 
+
+        condenser:
+                type: Points Condenser
+                pincount: 2
+                pinlabels: [points, coil]
+        points:
+                type: Points
+                pincount: 1
+                pinlabels: [points]
+
+        heated_grips:
+                type: Heated Grips
+                pincount: 2
+                pinlabels: [vcc, gnd]                
+
+        phone_charger:
+                type: Phone Charger
+                pincount: 2
+                pinlabels: [vcc, gnd]
+
+
+        
+
+# BMW wiring conventions
+# BN   - ground
+# RD   - direct to battery
+# GN   - switched power
+# GNBK - fused, switched power
+# GNBU - kill switch power
+# BUBK - right turn signal
+# BURD - left turn signal
+# WH   - high beam
+# YE   - headlight
+# GYBK - illumination
+#
+#
+
+
+cables:
+        fairingts_munit_w:
+                wirecount: 4
+                colors: [BUBK, BN, BURD, BN]
+                gauge: 22 AWG
+                length: 4 ft
+
+        sigout_ic_w:
+                wirecount: 2
+                colors: [BU, GNBU]        
+                gauge: 22 AWG
+                length: 3 ft
+                
+        lambda_gauge_pwr_w:
+                wirecount: 3
+                colors: [GNBK, BN, YE]
+                gauge: 22 AWG
+                length: 4 ft
+
+        lambda_gauge_serial_w:
+                wirecount: 4
+                colors: [RD, BK, BU, WH]   # not BMW standard
+                gauge: 22 AWG
+                length: 4 ft                         
+
+        press_temp_sensor_w:
+                wirecount: 5
+                colors: [GYBK, BKYE, BU, BKWH, BN]
+                gauge: 22 AWG
+                length: 6 ft
+
+        press_temp_gauge_w:
+                wirecount: 3
+                colors: [GNBK, BN, GYBK]
+                gauge: 22 AWG
+                length: 4 ft
+
+        munit_hg_w:
+                wirecount: 2
+                colors: [GNBK, BN]
+                gauge: 22 AWG
+
+        munit_pc_w:
+                wirecount: 2
+                colors: [GNBK, BN]
+                gauge: 22 AWG
+
+        bboard_parking_w:
+                wirecount: 2
+                colors: [GYBK, BN]
+                gauge: 22 AWG
+                length: 1 ft
+
+        munit_turn_d_w:
+                wirecount: 2
+                colors: [BUBK, BURD]
+                gauge: 22 AWG
+                length: 1 ft
+
+        turn_d_bridge:
+                wirecount: 1
+                colors: [BU]
+                gauge: 22 AWG
+                length: 1 ft
+
+        turn_d_tslamp:
+                wirecount: 1
+                colors: [BU]
+                gauge: 22 AWG
+                length: 3 ft
+
+        turn_hl_w:
+                wirecount: 2
+                colors: [BUBK, BN]
+                gauge: 22 AWG
+
+        turn_hr_w:
+                wirecount: 2
+                colors: [BURD, BN]
+                gauge: 22 AWG
+
+        tail_w:
+                wirecount: 5
+                colors: [BURD, BUBK, GYBK, BN, GNRD]
+                gauge: 22 AWG
+        
+        tail_gnd_w:
+                wirecount: 3
+                colors: [BN, BN, BN]
+                gauge: 22 AWG
+
+        left_control_w:
+                wirecount: 9
+                length: 0.6
+                colors: [YE, WH, BUBK, BK, RD, GY, BUWH, TQ, GN]
+                gauge: 22 AWG
+
+        right_control_w:
+                wirecount: 5
+                length: 0.6
+                colors: [BKWH, OG, BU, BK, BKYE]  # not BMW standard, but integrated into the control
+                gauge: 22 AWG
+
+        brake_switch_front_w:
+                wirecount: 2
+                length: 0.6 
+                colors: [GY, BK]        
+                gauge: 22 AWG
+
+        munit_ic_w:
+                wirecount: 4
+                colors: [GYBK, BN, WH, GNBK]                
+                gauge: 22 AWG
+                length: 2 ft
+
+        munit_bsr_w:
+                wirecount: 2
+                colors: [GY, BK]
+                gauge: 22 AWG
+                length: 4 ft
+
+        chargelight_vr_w:
+                wirecount: 1
+                colors: [BU]                
+                gauge: 22 AWG
+                length: 2 ft
+
+        neutral_light_switch_w:
+                wirecount: 1
+                colors: [BNBK]                
+                gauge: 22 AWG
+                length: 6 ft
+
+        munit_bboard_22awg_w:
+                wirecount: 10
+                colors: [YEBN, BURD, BUBK, BNGY, GNRD, GYBK, GNBU, GYBK, BURD, BUBK]
+                gauge: 22 AWG
+                length: 3 ft
+        
+                
+        ###
+        lambda_gauge_sig_w:
+                wirecount: 1
+                colors: [YE]   # TODO: CHANGE BASED ON SIGOUT OPTION      
+                gauge: 22 AWG
+        ion_w:
+                wirecount: 1
+                colors: [BK]        
+                gauge: 22 AWG
+        ###
+
+
+                 
+       
+        munit_bboard_14awg_w:
+                wirecount: 3
+                colors: [BN, YE, WH]
+                gauge: 14 AWGa
+                length: 3 ft
+
+        dcdc_light_w:
+                wirecount: 2
+                colors: [YE, BK]        
+                gauge: 14 AWG
+                length: 3 ft
+
+        bboard_headlight_w:
+                wirecount: 3
+                colors: [WH, YE, BN]
+                gauge: 14 AWG
+                length: 1 ft
+        
+        points_condenser_w:
+                wirecount: 1
+                colors: [BK]
+                gauge: 14 AWG
+                length: 1 ft
+
+        condenser_coil_w:
+                wirecount: 2
+                colors: [BK, BK]
+                gauge: 14 AWG
+                length: 2 ft
+        
+        ignition_power_w:
+                wirecount: 1
+                colors: [GN]
+                gauge: 14 AWG
+                length: 2 ft 
+        
+        key_munit_w:
+                wirecount: 1
+                colors: [GN]
+                gauge: 14 AWG
+                length: 3 ft
+        
+        fuse_key_w:
+                wirecount: 1
+                colors: [GN]
+                gauge: 14 AWG
+                length: 3 ft
+        
+        horn_w:
+                wirecount: 4
+                colors: [OG, BN, OG, BN]
+                gauge: 14 AWG
+                length: 2 ft
+
+        diode_starter_w:
+                wirecount: 1 
+                colors: [RD]
+                gauge: 14 AWG
+                length: 2 ft
+
+        diode_vr_w:
+                wirecount: 1
+                colors: [GN]
+                gauge: 14 AWG
+                length: 1 ft
+
+        alt_vr_w:
+                wirecount: 2
+                colors: [BK, BN]
+                gauge: 14 AWG
+                length: 1 ft
+
+        alt_diode_w:
+                wirecount: 4
+                colors: [BK, BK, BK, BK]
+                gauge: 14 AWG
+                length: 1 ft
+        
+        munit_starter_w:
+                wirecount: 2
+                colors: [BK, BK]
+                gauge: 14 AWG
+                length: 2 ft
+
+        bat_fuse_w:
+                wirecount: 2
+                colors: [RD, RD]
+                gauge: 10 AWG
+                length: 3 ft
+
+        fuse_munit_w:
+                wirecount: 1
+                colors: [RD]
+                gauge: 10 AWG
+                length: 1 ft
+
+        bat_gnd_w:
+                wirecount: 1
+                colors: [BK]
+                gauge: 4 AWG
+                length: 1 ft
+
+        starter_bat_w:
+                wirecount: 1
+                colors: [BK]
+                gauge: 4 AWG
+                length: 3 ft
+       
+        hb_ic_w:
+                wirecount: 1
+                colors: [WH]
+                gauge: 22 AWG
+                length: 2 ft
+
+        munit_hb_w:
+                wirecount: 1
+                colors: [WH]
+                gauge: 14 AWG
+                length: 1 ft
+        
+        hb_highbeam_w:
+                wirecount: 1
+                colors: [WH]
+                gauge: 14 AWG
+                length: 2 ft
+
+        dcdc_pwr_w:
+                wirecount: 1
+                colors: [WH]
+                gauge: 14 AWG
+                length: 1 ft
+
+        dcdc_gnd_w:
+                wirecount: 1
+                colors: [BN]
+                gauge: 14 AWG
+                length: 1 ft
+
+
+connections:    
+        -
+                - instrument_cluster: [brake_fluid_switch, oil_press_switch]
+                - sigout_ic_w: [1, 2]
+                - sigout_m:  [bfs_light, oil_light]
+        -       
+                - fairing_ts_m: [left, gnd_l, right, gnd_r]
+                - fairingts_munit_w: [1, 2, 3, 4]
+                - munit: [turn_out_l, gnd, turn_out_r, gnd]
+        -
+                - dcdc_converter: [12v+]
+                - dcdc_pwr_w: [1]
+                - fuse_block: [h_beam_o3]
+        -
+                - dcdc_converter: [12v-]
+                - dcdc_gnd_w: [1]
+                - munit: [gnd]
+        -
+                - dcdc_converter: [24v+, 24v-]
+                - dcdc_light_w: [1, 2]
+                - aux_brights: [vcc, gnd]
+        -       
+                - neutral_switch: [vcc]
+                - neutral_light_switch_w: [1]
+                - instrument_cluster: [neutral_switch]
+        -
+                - munit: [aux_out_2a, gnd]
+                - munit_hg_w: [1, 2]
+                - heated_grips: [vcc, gnd]
+        -
+                - munit: [aux_out_2a, gnd]
+                - munit_pc_w: [1, 2]
+                - phone_charger: [vcc, gnd]
+        -
+                - munit: [brake_in, gnd]
+                - munit_bsr_w: [1, 2]
+                - brake_switch_rear: [vcc, gnd]
+        -
+                - instrument_cluster: [starter_relay]
+                - chargelight_vr_w: [1]
+                - voltage_regulator_oem: [D+] 
+        -
+                - munit: [aux_out_1, gnd, aux_out_2a]
+                - munit_ic_w: [1, 2, 3]
+                - instrument_cluster: [illumination, gnd, vcc]
+        -
+                - brake_switch_front: [vcc, gnd]
+                - brake_switch_front_w: [1, 2]
+                - bucket_board: [p31_6, p15U_1]
+        -      
+                - headlight: [high, low, gnd]
+                - bboard_headlight_w: [1, 2, 3]
+                - bucket_board: [p56a_2, p56b_1, p31_6]
+
+        - 
+                - left_control: [running_light, high_beam, ts_in, ts_right, horn, ts_left, pwr]
+                - left_control_w: [1, 2, 3, 5, 6, 8, 9]
+                - bucket_board: [p58_2, p56a_2, p31_3, pR_2, pH_2, pL_2, p31_2]
+        -
+                - right_control: [starter_in, starter_out, ignition_in, ignition_out_nc]
+                - right_control_w: [1, 2, 3, 4]
+                - bucket_board: [p31_4, p85_2, p31_5, p85b_2]
+        -
+                - munit: [start_in, turn_in_l, turn_in_r, horn_in, brake_in, light, kill, aux_in_1, turn_out_l, turn_out_r]
+                - munit_bboard_22awg_w: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                - bucket_board: [p85_1, pL_1, pR_1, pH_1, p15U_1, p58_1, pLKK_1, p85b_1, p15UX_1, p58U_1]
+        -
+                - munit: [gnd, light_out]
+                - munit_bboard_14awg_w: [1, 2]
+                - bucket_board: [p31_1, p56b_1]
+        -
+                - fuse_block: [h_beam_o1]
+                - hb_highbeam_w: [1]
+                - bucket_board: [p56a_1]
+        -
+                - fuse_block: [h_beam_o2]
+                - hb_ic_w: [1]
+                - instrument_cluster: [high_beam]
+        -
+                - bucket_board: [p85b_2, p31_3]
+                - bboard_parking_w: [1, 2]
+                - parking_light: [vcc, gnd]
+        -
+                - munit: [turn_out_l, gnd]
+                - turn_hl_w: [1, 2]
+                - turn_handlebar_lh: [turn_hb_lh, gnd]
+        -
+                - munit: [turn_out_r, gnd]
+                - turn_hr_w: [1, 2]
+                - turn_handlebar_rh: [turn_hb_rh, gnd]
+        -
+                - munit: [h_beam]
+                - munit_hb_w: [1]
+                - fuse_block: [h_beam_in]
+        -
+                - munit: [turn_out_r, turn_out_l]
+                - munit_turn_d_w: [1, 2]
+                - fuse_block: [rts_d_in, lts_d_in]
+        -
+                - fuse_block: [rts_d_out]
+                - turn_d_bridge: [1]
+                - fuse_block: [lts_d_out]
+        -
+                - fuse_block: [lts_d_out]
+                - turn_d_tslamp: [1]
+                - instrument_cluster: [indicator_relay]
+        -
+                - ignition_switch: [p58]
+                - key_munit_w: [1]
+                - munit: [lock]
+        -
+                - fuse_block: [7A_out]
+                - fuse_key_w: [1]
+                - ignition_switch: [p30]
+        -
+                - fuse_block: [40A_out]
+                - fuse_munit_w: [1]
+                - munit: [bat]
+        -
+                - battery: [vcc, vcc]
+                - bat_fuse_w: [1, 2]
+                - fuse_block: [40A_in, 7A_in]
+        -
+                - battery: [gnd]
+                - bat_gnd_w: [1]
+                - engine_gnd: [gnd]
+        -
+                - munit: [horn_out, gnd]
+                - horn_w: [1, 2]
+                - horn_r: [horn_vcc, horn_gnd]
+        -
+                - munit: [horn_out, gnd]
+                - horn_w: [3, 4]
+                - horn_l: [horn_vcc, horn_gnd]
+        -
+                - munit: [turn_out_l]
+                - tail_w: [1]
+                - turn_rear_lh: [turn_rear_lh]
+        -
+                - munit: [turn_out_r]
+                - tail_w: [2]
+                - turn_rear_rh: [turn_rear_rh]
+        -
+                - munit: [aux_out_1]
+                - tail_w: [3]
+                - tail_light: [tail_light]
+        -
+                - munit: [brake_out, gnd]
+                - tail_w: [5, 4]
+                - brake_light: [brake_light, gnd]
+        
+        - 
+                - brake_light: [gnd]
+                - tail_gnd_w: [1]
+                - turn_rear_lh: [gnd]        
+        - 
+                - brake_light: [gnd]
+                - tail_gnd_w: [2]
+                - turn_rear_rh: [gnd]        
+        - 
+                - brake_light: [gnd]
+                - tail_gnd_w: [3]
+                - tail_light: [gnd]        
+        -
+                - munit: [start_1, start_2]
+                - munit_starter_w: [1, 2]
+                - starter: [fifty, fifty]
+        -
+                - starter: [thirty]
+                - starter_bat_w: [1]
+                - battery: [vcc]
+        -
+                - diode_board: [D+]
+                - diode_vr_w: [1]
+                - voltage_regulator_oem: [D+]
+        -
+                - diode_board: [B+]
+                - diode_starter_w: [1]
+                - starter: [thirty]
+        -
+                - alternator: [DF, D-]
+                - alt_vr_w: [1, 2]
+                - voltage_regulator_oem: [DF, D-]
+        -
+                - alternator: [Y, W, V, U]
+                - alt_diode_w: [1, 2, 3, 4]
+                - diode_board: [Y, W, V, U]
+        -
+                - lambda_gauge_f: [switched_12v, gnd, headlight]
+                - lambda_gauge_pwr_w: [1, 2, 3]
+                - munit: [aux_out_2a, gnd, aux_out_1]
+        -       
+                - lambda_gauge_f: [analog_out]
+                - lambda_gauge_sig_w: [1]
+                - sigout_m: [o2]
+        -       
+                - lambda_gauge_f: [out_vcc, out_gnd, out_tx, out_rx]
+                - lambda_gauge_serial_w: [1, 2, 3, 4]
+                - serial_m: [serial_vcc, serial_gnd, serial_tx, serial_rx]
+        -
+                - press_temp_gauge_f: [switched_12v, gnd, headlight]
+                - press_temp_gauge_w: [1, 2, 3]
+                - munit: [aux_out_2a, gnd, aux_out_1]
+        - 
+                - press_temp_gauge_f: [oil_press_sensor_vcc, oil_press_sensor_gnd, oil_press_sensor_dat, oil_temp_sensor_out, oil_temp_sensor_in]
+                - press_temp_sensor_w: [1, 2, 3, 4, 5]
+                - press_temp_sensor: [vcc, gnd, press_out, temp_ntc_out, NC]
+
+        - 
+                - points: [points]
+                - points_condenser_w: [1]
+                - condenser: [points]
+        -
+                - condenser: [coil, coil]
+                - condenser_coil_w: [1, 2]
+                - coil: [coil_l, coil_r]
+        -
+                - munit: [ignition]
+                - ignition_power_w: [1]
+                - coil: [vcc]
+        -
+                - coil: [ion]
+                - ion_w: [1]
+                - sigout_m: [ion]
